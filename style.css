@@ -1,0 +1,12 @@
+.card
+{
+    display: flex;
+}
+
+.card-preview
+{
+    border: solid white;
+    border-radius: 10px;
+    box-shadow: 0px 5px 5px lightgray;
+    width: 350px; /* smaller than responsive mode iPhone X safari 12 */
+}

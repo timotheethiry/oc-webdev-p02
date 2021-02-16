@@ -8,7 +8,8 @@
         <meta name="keywords" content="hébergement, logement, Hôtel, Hôtels, séjours en ville, Prix compétitifs, réductions, prix bon marché">
         <link rel="stylesheet" type="text/css" href="style.css">
         <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/f492b45c83.js" crossorigin="anonymous"></script>
     </head>
 
     <body>
@@ -23,26 +24,116 @@
             </nav>
         </header>
 
-        <div class="hotels">
-            <section id="hebergements">
+        <div class="hotels"> <!-- apply flexbox for both hotel and popular sections-->
+            <section id="hebergements"> <!-- apply flexbox -->
                 <h2>Hébergements à Marseille</h2>
+
                 <div class="card">
-                    <article class="card-preview"><img class="card-preview__image" src="images/hebergements/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt=""><h3>Auberge la Cannebière</h3><p>Nuit à partir de 25 &#8364 </p><img src="#" alt=""></article>
-                    <article class="card-preview"><img class="card-preview__image" src="images/hebergements/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt=""><h3>Hôtel du port</h3><p>Nuit à partir de 52 &#8364 </p><img src="#" alt=""></article>
-                    <article class="card-preview"><img class="card-preview__image" src="images/hebergements/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt=""><h3>Hôtel Les mouettes</h3><p>Nuit à partir de 76 &#8364 </p><img src="#" alt=""></article>
-                    <article class="card-preview"><img class="card-preview__image" src="images/hebergements/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt=""><h3>Hôtel de la mer</h3><p>Nuit à partir de 46 &#8364 </p><img src="#" alt=""></article>
-                    <article class="card-preview"><img class="card-preview__image" src="images/hebergements/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt=""><h3>Auberge Le Panier</h3><p>Nuit à partir de 23 &#8364 </p><img src="#" alt=""></article>
-                    <article class="card-preview"><img class="card-preview__image" src="images/hebergements/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt=""><h3>Hôtel chez Amina</h3><p>Nuit à partir de 96 &#8364 </p><img src="#" alt=""></article>
+                    <article class="card-preview">
+                        <img class="card-preview__image" src="images/hebergements/cannebiere.jpg" alt="">
+                        <h3 class="card-preview__text card-preview__text--heading">Auberge la Cannebière</h3>
+                        <p class="card-preview__text">Nuit à partir de 25 &#8364 </p>
+                        <span class="fas fa-star card-preview__text"></span> <!-- align star with BEM class-->
+                        <span class="fas fa-star"></span>
+                        <span class="fas fa-star"></span>
+                        <span class="fas fa-star"></span>
+                        <span class="fas fa-star fa-star--gray"></span>
+                    </article>
+
+                    <article class="card-preview">
+                        <img class="card-preview__image" src="images/hebergements/hotelport.jpg" alt="">
+                        <h3 class="card-preview__text card-preview__text--heading">Hôtel du port</h3>
+                        <p class="card-preview__text">Nuit à partir de 52 &#8364 </p>
+                        <span class="fas fa-star card-preview__text"></span> <!-- align star with BEM class set font-size with fa-star in stylesheet-->
+                        <span class="fas fa-star"></span>
+                        <span class="fas fa-star"></span>
+                        <span class="fas fa-star"></span>
+                        <span class="fas fa-star"></span>
+                    </article>
+
+                    <article class="card-preview">
+                        <img class="card-preview__image" src="images/hebergements/mouettes.jpg" alt="">
+                        <h3 class="card-preview__text card-preview__text--heading">Hôtel Les mouettes</h3>
+                        <p class="card-preview__text">Nuit à partir de 76 &#8364 </p>
+                        <span class="fas fa-star card-preview__text"></span> <!-- align star with BEM class set font-size with fa-star in stylesheet-->
+                        <span class="fas fa-star"></span>
+                        <span class="fas fa-star"></span>
+                        <span class="fas fa-star"></span>
+                        <span class="fas fa-star fa-star--gray"></span>
+                    </article>
+
+                    <article class="card-preview">
+                        <img class="card-preview__image" src="images/hebergements/hotelmer.jpg" alt="">
+                        <h3 class="card-preview__text card-preview__text--heading">Hôtel de la mer</h3>
+                        <p class="card-preview__text">Nuit à partir de 46 &#8364 </p>
+                        <span class="fas fa-star card-preview__text"></span> <!-- align star with BEM class set font-size with fa-star in stylesheet-->
+                        <span class="fas fa-star"></span>
+                        <span class="fas fa-star"></span>
+                        <span class="fas fa-star fa-star--gray"></span>
+                        <span class="fas fa-star fa-star--gray"></span>
+                    </article>
+
+                    <article class="card-preview">
+                        <img class="card-preview__image" src="images/hebergements/panier.jpg" alt="">
+                        <h3 class="card-preview__text card-preview__text--heading">Auberge Le Panier</h3>
+                        <p class="card-preview__text">Nuit à partir de 23 &#8364 </p>
+                        <span class="fas fa-star card-preview__text"></span> <!-- align star with BEM class set font-size with fa-star in stylesheet-->
+                        <span class="fas fa-star"></span>
+                        <span class="fas fa-star"></span>
+                        <span class="fas fa-star"></span>
+                        <span class="fas fa-star fa-star--gray"></span>
+                    </article>
+
+                    <article class="card-preview">
+                        <img class="card-preview__image" src="images/hebergements/hotelamina.jpg" alt="">
+                        <h3 class="card-preview__text card-preview__text--heading">Hôtel chez Amina</h3>
+                        <p class="card-preview__text">Nuit à partir de 96 &#8364 </p>
+                        <span class="fas fa-star card-preview__text"></span> <!-- align star with BEM class set font-size with fa-star in stylesheet-->
+                        <span class="fas fa-star"></span>
+                        <span class="fas fa-star"></span>
+                        <span class="fas fa-star"></span>
+                        <span class="fas fa-star"></span>
+                    </article>
                 </div>
                 <a href=""><p>Afficher plus</p></a>
             </section>
 
             <section id="populaires">
                 <h2>Les plus populaires</h2>
+
                 <div class="card">
-                    <article class="card-preview card-preview--width2"><img class="card-preview__image card-preview__image--float" src="images/hebergements/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt=""><h3>Hôtel Le soleil du matin</h3><p>Nuit à partir de 128 &#8364 </p><img src="#" alt=""></article>
-                    <article class="card-preview card-preview--width2"><img class="card-preview__image card-preview__image--float" src="images/hebergements/aw-creative-VGs8z60yT2c-unsplash.jpg" alt=""><h3>Au coeur de l'eau Chambres d'hôtes</h3><p>Nuit à partir de 71 &#8364 </p><img src="#" alt=""></article>
-                    <article class="card-preview card-preview--width2"><img class="card-preview__image card-preview__image--float" src="images/hebergements/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt=""><h3>Hôtel Tout bleu et Blanc</h3><p>Nuit à partir de 68 &#8364 </p><img src="#" alt=""></article>
+                    <article class="card-preview card-preview--width2">
+                        <img class="card-preview__image card-preview__image--float" src="images/hebergements/hotelmatin.jpg" alt="">
+                        <h3 class="card-preview__text card-preview__text--heading">Hôtel Le soleil du matin</h3>
+                        <p class="card-preview__text">Nuit à partir de 128 &#8364 </p>
+                        <span class="fas fa-star"></span>
+                        <span class="fas fa-star"></span>
+                        <span class="fas fa-star"></span>
+                        <span class="fas fa-star"></span>
+                        <span class="fas fa-star"></span>
+                    </article>
+
+                    <article class="card-preview card-preview--width2">
+                        <img class="card-preview__image card-preview__image--float" src="images/hebergements/coeureau.jpg" alt="">
+                        <h3 class="card-preview__text card-preview__text--heading">Au coeur de l'eau Chambres d'hôtes</h3>
+                        <p class="card-preview__text">Nuit à partir de 71 &#8364 </p>
+                        <span class="fas fa-star"></span>
+                        <span class="fas fa-star"></span>
+                        <span class="fas fa-star"></span>
+                        <span class="fas fa-star"></span>
+                        <span class="fas fa-star fa-star--gray"></span>
+                    </article>
+
+                    <article class="card-preview card-preview--width2">
+                        <img class="card-preview__image card-preview__image--float" src="images/hebergements/hotelbleu.jpg" alt="">
+                        <h3 class="card-preview__text card-preview__text--heading">Hôtel Tout bleu et Blanc</h3>
+                        <p class="card-preview__text">Nuit à partir de 68 &#8364 </p>
+                        <span class="fas fa-star"></span>
+                        <span class="fas fa-star"></span>
+                        <span class="fas fa-star"></span>
+                        <span class="fas fa-star"></span>
+                        <span class="fas fa-star fa-star--gray"></span>
+                    </article>
                 </div>
             </section>
         </div>

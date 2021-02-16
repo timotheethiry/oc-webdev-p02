@@ -42,13 +42,9 @@ section
     border-radius: 20px; /* temporary value */
 }
 
-section a
+article /* show block clickability */
 {
-    display: inline-block;
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
-    margin-left: 2rem;
+    cursor: pointer;
 }
 
 .card
@@ -115,6 +111,19 @@ section a
 .fa-star--gray
 {
     color: #cfcfcf;
+}
+
+section a
+{
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+#show-more
+{
+    margin-left: 2rem;
 }
 
 footer

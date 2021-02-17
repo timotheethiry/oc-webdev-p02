@@ -1,0 +1,31 @@
+body
+{
+    font-family: 'Raleway', sans-serif;
+}
+
+.fa-map-marker-alt
+{
+    border-radius: 15px 0 0 15px;
+    width: 45px;
+    height: 45px;
+    background-color: #f2f2f2;
+    background-position: bottom;
+    text-align: center;
+    /* vertical-align: middle; /* maybe cancel vertical align and move the background directly */
+}
+
+
+#search-button
+{
+    color: white;
+    background-color: #0065fc;
+    border: none;
+    border-radius: 0 15px 15px 0;
+    height: 45px;
+}
+
+#town
+{
+    height: 45px;
+    border: none;
+}

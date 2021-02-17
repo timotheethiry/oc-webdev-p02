@@ -46,28 +46,31 @@ body
 .card--column /* activities previews layout*/
 {
     flex-direction: column;
-    justify-content: space-evenly;
-    
+    justify-content: space-between;
+    height: auto;
+    max-height: 450px;    
 }
 
 .card-preview--w370
 {
     width: 370px;
-    
 }
 
-.card-preview--w300, .card-preview__image--w300
-{
+.card-preview--activites, .card-preview__image--activites
+{ 
     width: 300px;
+    height: auto;
+    max-height: 450px;
+    border: none;
     border-top-left-radius: 20px; /* overrides images top corners w/o changing cards bottom corners */
     border-top-right-radius: 20px;
 }
 
-.card-preview--activites
-{ 
-    height: auto;
-    max-height: 450px;
-    border: none;
+.card-preview__image--brighter
+{
+    /* filter: brightness(1.2); result not satisfying, try rgba() */
+    /* background: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)); */
+    filter: opacity(0.8) brightness(105%);
 }
 
 .card-preview__image--h400
@@ -80,9 +83,19 @@ body
     height: 200px;
 }
 
-.card-preview__image--h160
+.card-preview__image--h170
 {
-    height: 160px;
+    height: 170px;
+}
+
+.card-preview__image--h150
+{
+    height: 150px;
+}
+
+.card-preview__image--h120
+{
+    height: 120px;
 }
 
 .card-preview__text--activites

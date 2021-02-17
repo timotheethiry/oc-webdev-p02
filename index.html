@@ -6,50 +6,196 @@
         <meta charset="utf-8" />
         <meta name="descrition" content="Profitez de réductions incroyables sur des hôtels partout en france  avec Reservia. Consultez les avis clients et profitez de la garantie du meilleur tarif sur des hôtels pour tous budgets. Découvrer des idées de sorties et activités à faire pour des moments inoubliables en famille ou entre amis.">
         <meta name="keywords" content="hébergement, logement, Hôtel, Hôtels, séjours en ville, Prix compétitifs, réductions, prix bon marché">
-        <link rel="stylesheet" type="text/css" href="css/styles.css">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet"> 
     </head>
 
     <body>
         <header>
-            <img>
+            <img src="images/logo/reservia.png" id="logo">
             <nav>
                 <ul>
-                    <li>Hébergements</li>
-                    <li>Activités</li>
-                    <li>S'inscrire</li>
+                    <li><a href="#hebergements">Hébergements</a></li>
+                    <li><a href="#activites">Activités</a></li>
                 </ul>
             </nav>
+            <a href="" class="sign-up"><p>S'inscrire</p></a>
         </header>
 
-        <section>
-            <div>
-                <article></article>
-                <article></article>
-                <article></article>
-                <article></article>
-                <article></article>
-                <article></article>
-            </div>
+        <div class="hotels"> <!-- apply flexbox for both hotel and popular sections-->
+            <section id="hebergements"> <!-- apply flexbox -->
+                <h2>Hébergements à Marseille</h2>
 
-             <div>
-                <article></article>
-                <article></article>
-                <article></article>
-            </div>
-        </section>
-        
-        <section>
-            <div>
-                <article></article>
-                <article></article>
-                <article></article>
-                <article></article>
-                <article></article>
-                <article></article>
+                <div class="card">
+                    <article class="card-preview" onclick="location.href=''"> <!-- make the whole block clickable see css fo cursor styling-->
+                        <!-- <img class="card-preview__image" src="images/hebergements/cannebiere.jpg" alt=""> -->
+                        <h3 class="card-preview__text card-preview__text--heading">Auberge la Cannebière</h3>
+                        <p class="card-preview__text">Nuit à partir de 25 &#8364 </p>
+                        <span class="fas fa-star card-preview__text"></span> <!-- align star with BEM class-->
+                        <span class="fas fa-star"></span>
+                        <span class="fas fa-star"></span>
+                        <span class="fas fa-star"></span>
+                        <span class="fas fa-star fa-star--gray"></span>
+                    </article>
+
+                    <article class="card-preview" onclick="location.href=''">
+                        <!-- <img class="card-preview__image" src="images/hebergements/hotelport.jpg" alt=""> -->
+                        <h3 class="card-preview__text card-preview__text--heading">Hôtel du port</h3>
+                        <p class="card-preview__text">Nuit à partir de 52 &#8364 </p>
+                        <span class="fas fa-star card-preview__text"></span> <!-- align star with BEM class set font-size with fa-star in stylesheet-->
+                        <span class="fas fa-star"></span>
+                        <span class="fas fa-star"></span>
+                        <span class="fas fa-star"></span>
+                        <span class="fas fa-star"></span>
+                    </article>
+
+                    <article class="card-preview" onclick="location.href=''">
+                        <!-- <img class="card-preview__image" src="images/hebergements/mouettes.jpg" alt=""> -->
+                        <h3 class="card-preview__text card-preview__text--heading">Hôtel Les mouettes</h3>
+                        <p class="card-preview__text">Nuit à partir de 76 &#8364 </p>
+                        <span class="fas fa-star card-preview__text"></span> <!-- align star with BEM class set font-size with fa-star in stylesheet-->
+                        <span class="fas fa-star"></span>
+                        <span class="fas fa-star"></span>
+                        <span class="fas fa-star"></span>
+                        <span class="fas fa-star fa-star--gray"></span>
+                    </article>
+
+                    <article class="card-preview" onclick="location.href=''">
+                        <!-- <img class="card-preview__image" src="images/hebergements/hotelmer.jpg" alt=""> -->
+                        <h3 class="card-preview__text card-preview__text--heading">Hôtel de la mer</h3>
+                        <p class="card-preview__text">Nuit à partir de 46 &#8364 </p>
+                        <span class="fas fa-star card-preview__text"></span> <!-- align star with BEM class set font-size with fa-star in stylesheet-->
+                        <span class="fas fa-star"></span>
+                        <span class="fas fa-star"></span>
+                        <span class="fas fa-star fa-star--gray"></span>
+                        <span class="fas fa-star fa-star--gray"></span>
+                    </article>
+
+                    <article class="card-preview" onclick="location.href=''">
+                        <!-- <img class="card-preview__image" src="images/hebergements/panier.jpg" alt=""> -->
+                        <h3 class="card-preview__text card-preview__text--heading">Auberge Le Panier</h3>
+                        <p class="card-preview__text">Nuit à partir de 23 &#8364 </p>
+                        <span class="fas fa-star card-preview__text"></span> <!-- align star with BEM class set font-size with fa-star in stylesheet-->
+                        <span class="fas fa-star"></span>
+                        <span class="fas fa-star"></span>
+                        <span class="fas fa-star"></span>
+                        <span class="fas fa-star fa-star--gray"></span>
+                    </article>
+
+                    <article class="card-preview" onclick="location.href=''">
+                        <!-- <img class="card-preview__image" src="images/hebergements/hotelamina.jpg" alt=""> -->
+                        <h3 class="card-preview__text card-preview__text--heading">Hôtel chez Amina</h3>
+                        <p class="card-preview__text">Nuit à partir de 96 &#8364 </p>
+                        <span class="fas fa-star card-preview__text"></span> <!-- align star with BEM class set font-size with fa-star in stylesheet-->
+                        <span class="fas fa-star"></span>
+                        <span class="fas fa-star"></span>
+                        <span class="fas fa-star"></span>
+                        <span class="fas fa-star"></span>
+                    </article>
+                </div>
+                <a href="" id="show-more"><p>Afficher plus</p></a>
+            </section>
+
+            <section id="populaires">
+                <h2>Les plus populaires</h2>
+
+                <div class="card">
+                    <article class="card-preview card-preview--w370" onclick="location.href=''">
+                        <!-- <img class="card-preview__image card-preview__image--float" src="images/hebergements/hotelmatin.jpg" alt=""> -->
+                        <h3 class="card-preview__text card-preview__text--heading">Hôtel Le soleil du matin</h3>
+                        <p class="card-preview__text">Nuit à partir de 128 &#8364 </p>
+                        <span class="fas fa-star"></span>
+                        <span class="fas fa-star"></span>
+                        <span class="fas fa-star"></span>
+                        <span class="fas fa-star"></span>
+                        <span class="fas fa-star"></span>
+                    </article>
+
+                    <article class="card-preview card-preview--w370" onclick="location.href=''">
+                        <!-- <img class="card-preview__image card-preview__image--float" src="images/hebergements/coeureau.jpg" alt=""> -->
+                        <h3 class="card-preview__text card-preview__text--heading">Au coeur de l'eau Chambres d'hôtes</h3>
+                        <p class="card-preview__text">Nuit à partir de 71 &#8364 </p>
+                        <span class="fas fa-star"></span>
+                        <span class="fas fa-star"></span>
+                        <span class="fas fa-star"></span>
+                        <span class="fas fa-star"></span>
+                        <span class="fas fa-star fa-star--gray"></span>
+                    </article>
+
+                    <article class="card-preview card-preview--w370" onclick="location.href=''">
+                        <!-- <img class="card-preview__image card-preview__image--float" src="images/hebergements/hotelbleu.jpg" alt=""> -->
+                        <h3 class="card-preview__text card-preview__text--heading">Hôtel Tout bleu et Blanc</h3>
+                        <p class="card-preview__text">Nuit à partir de 68 &#8364 </p>
+                        <span class="fas fa-star"></span>
+                        <span class="fas fa-star"></span>
+                        <span class="fas fa-star"></span>
+                        <span class="fas fa-star"></span>
+                        <span class="fas fa-star fa-star--gray"></span>
+                    </article>
+                </div>
+            </section>
+        </div>
+            
+        <section id="activites">
+            <h2>Activités à Marseille</h2>
+            <div class="card card--column">
+                <article class="card-preview card-preview--activites" onclick="location.href=''">
+                    <img class="card-preview__image card-preview__image--activites card-preview__image--h400" src="images/activites/vieuxport.jpg" alt="">
+                    <h3 class="card-preview__text card-preview__text--heading card-preview__text--activites">Vieux Port</h3>
+                </article>
+
+                <article class="card-preview card-preview--activites" onclick="location.href=''">
+                    <img class="card-preview__image card-preview__image--activites card-preview__image--h200" src="images/activites/pomegues.jpg" alt="">
+                    <h3 class="card-preview__text card-preview__text--heading card-preview__text--activites">Fort de Pomègues</h3>
+                </article>
+
+                <article class="card-preview card-preview--activites" onclick="location.href=''">
+                    <img class="card-preview__image card-preview__image--activites card-preview__image--h120" src="images/activites/iles.jpg" alt="">
+                    <h3 class="card-preview__text card-preview__text--heading card-preview__text--activites">Îles du Frioul</h3>
+                </article>
+
+                <article class="card-preview card-preview--activites" onclick="location.href=''">
+                    <img class="card-preview__image card-preview__image--activites card-preview__image--h400 card-preview__image--brighter" src="images/activites/calanques.jpg" alt="">
+                    <h3 class="card-preview__text card-preview__text--heading card-preview__text--activites">Parc National des Calanques</h3>
+                </article>
+
+                <article class="card-preview card-preview--activites" onclick="location.href=''">
+                    <img class="card-preview__image card-preview__image--activites card-preview__image--h150" src="images/activites/notredame.jpg" alt="">
+                    <h3 class="card-preview__text card-preview__text--heading card-preview__text--activites">Notre-Dame-de-la-Garde</h3>
+                </article>
+                
+                <article class="card-preview card-preview--activites" onclick="location.href=''">
+                    <img class="card-preview__image card-preview__image--activites card-preview__image--h170" src="images/activites/parc.jpg" alt="">
+                    <h3 class="card-preview__text card-preview__text--heading card-preview__text--activites">Parc Longchamp</h3>
+                </article>
             </div>
         </section>
 
         <footer>
+            <div class="footer-layout footer-layout--padding-left">
+                <h3>À propos</h3>
+                <ul>
+                    <li><a href="">Fonctionnement du site</a></li>
+                    <li><a href="">Conditions générales de vente</a></li>
+                    <li><a href="">Données et confidentialité</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-layout">
+                <h3>Nos hébergements</h3>
+                <ul>
+                    <li><a href="">Charte de qualité</a></li>
+                    <li><a href="">Soumettre votre hôtel</a></li>
+                </ul>
+            </div>
 
+            <div class="footer-layout">
+                <h3>Assistance</h3>
+                <ul>
+                    <li><a href="">Centre d'aide</a></li>
+                    <li><a href="">Nous contacter</a></li>
+                </ul>
+            </div>
         </footer>
     </body>

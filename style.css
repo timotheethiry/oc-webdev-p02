@@ -1,0 +1,38 @@
+body
+{
+    font-family: 'Raleway', sans-serif;
+}
+
+footer
+{
+    display: flex;
+    background-color: #f2f2f2;
+}
+
+.footer-layout
+{
+    flex: 1;
+    padding: 2rem 0 2rem 0;
+    line-height: 1.9;  
+}
+
+.footer-layout--padding-left /* aligning 1st of 3 lists */
+{
+    padding-left: 2rem;
+}
+
+footer a
+{
+    text-decoration: none;
+    color: black;
+}
+
+footer li
+{
+    list-style: none;
+}
+
+ul
+{
+    padding-left: 0px;
+}

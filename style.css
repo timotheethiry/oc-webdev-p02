@@ -28,7 +28,7 @@ input
 
 input::placeholder
 {
-    color: black; /* doesn't work */
+    /* color: black; works but stay gray try with value attribute */
 }
 
 
@@ -42,7 +42,7 @@ input::placeholder
     border-radius: 15px 0 0 15px;
     height: 17px;
     background-color: #f2f2f2;
-    padding: 16px 16px 12px 16px;
+    padding: 15px 16px 13px 16px;
     /* text-align: center; */
     vertical-align: middle;
 }

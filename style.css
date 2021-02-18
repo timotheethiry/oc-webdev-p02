@@ -1,17 +1,39 @@
-body
+body, input
 {
     font-family: 'Raleway', sans-serif;
+    font-size: 14px;
 }
 
-.fa-map-marker-alt
+h1, h2
+{
+    font-size: 24px;
+}
+
+h3
+{
+    font-size: 16px;
+}
+
+input
+{
+    font-weight: 700;
+    height: 45px;
+}
+
+
+#research
+{
+    margin-left: 1rem;
+}
+
+.map-marker
 {
     border-radius: 15px 0 0 15px;
-    width: 45px;
-    height: 45px;
+    height: 17px;
     background-color: #f2f2f2;
-    background-position: bottom;
-    text-align: center;
-    /* vertical-align: middle; /* maybe cancel vertical align and move the background directly */
+    padding: 16px 16px 12px 16px;
+    /* text-align: center; */
+    vertical-align: middle;
 }
 
 
@@ -19,13 +41,11 @@ body
 {
     color: white;
     background-color: #0065fc;
-    border: none;
     border-radius: 0 15px 15px 0;
-    height: 45px;
+    border: none;
 }
 
 #town
 {
-    height: 45px;
-    border: none;
+   border: 1px solid #f2f2f2;
 }

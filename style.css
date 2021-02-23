@@ -1,0 +1,51 @@
+body
+{
+    font-family: 'Raleway', sans-serif;
+}
+
+header
+{
+    display: flex;
+    margin-top: 30px; /* temporary layout */
+}
+
+#logo
+{
+    width: 100px;
+    height: 100%;
+    padding-left: 30px; /* temporary layout */
+}
+
+/* separation logo and navigation bar */ 
+nav
+{
+     margin-left: auto;
+}
+
+/* menu horizontal alignment and keep the margins enabled */ 
+nav ul li
+{
+    display: inline-block;
+    list-style: none;
+}
+
+nav ul li a
+{
+    color: black;
+    text-decoration: none;
+    padding: 40px 30px 20px 30px; /* temporary layout */
+}
+
+nav ul li a:focus
+{
+    color: #0065fc;
+    border-top: solid #0065fc;
+}
+
+.sign-up
+{
+    text-decoration: none;
+    font-weight: bold;
+    color:#0065fc;
+    padding: 0px 50px 20px 30px; /* temporary layout */
+}

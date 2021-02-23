@@ -105,3 +105,61 @@ input::placeholder
 {
    border: 1px solid #f2f2f2;
 }
+
+.filtres
+{
+    display: flex;
+    align-items: center;
+    width: 750px;
+    flex-wrap: wrap;
+}
+
+button
+{
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    height: 40px;
+    padding: 0 10px 0 0;
+    background-color: white;
+    border-radius: 20px;
+    border: solid #e1e1e1;
+    margin-left: 20px;
+}
+
+button:hover
+{
+    color: #0065fc;
+    background-color: #deebff;
+    border-color: #deebff;
+    box-shadow: 2px 3px 5px #f2f2f2;
+}
+
+.filter-icon
+{
+    display: flex;
+    height: 40px;
+    width: 40px;
+    background-color: #deebff;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    margin-right: 10px;
+}
+
+.filter-icon--small
+{
+    height: 18px;
+    width: 18px;
+    background-color: transparent;
+    color: #0065fc;
+    overflow: hidden;
+    border: solid 1px #e1e1e1;
+}
+
+.fa-info-circle
+{
+    background-color: #0065fc;
+    color: white;
+    font-size: 20px;  
+}

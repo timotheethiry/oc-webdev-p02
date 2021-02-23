@@ -23,14 +23,14 @@ h3
 header
 {
     display: flex;
-    margin-top: 30px; /* temporary layout */
+    margin-top: 30px;
 }
 
 #logo
 {
     width: 100px;
     height: 100%;
-    padding-left: 30px; /* temporary layout */
+    padding-left: 30px;
 }
 
 /* separation logo and navigation bar */ 
@@ -50,7 +50,7 @@ nav ul li a
 {
     color: black;
     text-decoration: none;
-    padding: 40px 30px 20px 30px; /* temporary layout */
+    padding: 40px 30px 20px 30px;
 }
 
 nav ul li a:focus
@@ -64,35 +64,33 @@ nav ul li a:focus
     text-decoration: none;
     font-weight: bold;
     color:#0065fc;
-    padding: 0px 50px 20px 30px; /* temporary layout */
+    padding: 0px 50px 20px 30px;
 }
+
+/* town reseach form */
 input
 {
     font-weight: 700;
     height: 45px;
 }
 
-input::placeholder
-{
-    /* color: black; works but stay gray try with value attribute */
-}
-
-
+/* town research section alignment */
 #research
 {
     margin-left: 1rem;
 }
 
+/* form's label styling with the map marker */
 .map-marker
 {
     border-radius: 15px 0 0 15px;
     height: 17px;
     background-color: #f2f2f2;
     padding: 15px 16px 13px 16px;
-    /* text-align: center; */
     vertical-align: middle;
 }
 
+/* form's submit button styling */
 #search-button
 {
     color: white;
@@ -101,11 +99,13 @@ input::placeholder
     border: none;
 }
 
+/* form's text area styling */
 #town
 {
    border: 1px solid #f2f2f2;
 }
 
+/* filters section */
 .filtres
 {
     display: flex;
@@ -114,6 +114,7 @@ input::placeholder
     flex-wrap: wrap;
 }
 
+/* filters' buttons */
 button
 {
     display: flex;
@@ -135,6 +136,7 @@ button:hover
     box-shadow: 2px 3px 5px #f2f2f2;
 }
 
+/* styling of the image inside the filter buttons */
 .filter-icon
 {
     display: flex;
@@ -147,6 +149,7 @@ button:hover
     margin-right: 10px;
 }
 
+/* result information from the research */
 .filter-icon--small
 {
     height: 18px;
@@ -164,6 +167,7 @@ button:hover
     font-size: 20px;  
 }
 
+/* to DRY through */
 ul
 {
     list-style: none;
@@ -172,11 +176,12 @@ ul
 
 h2
 {
-    padding-top: 2rem; /* temporary value */
-    margin-left: 2rem; /* temporary value */
+    padding-top: 2rem;
+    margin-left: 2rem;
     margin-bottom: 0;
 }
 
+/* hotels section */
 .hotels
 {
     display: flex;
@@ -197,10 +202,8 @@ h2
 section
 {
     background-color: #f2f2f2;
-    /* width: 900px; temporary value */
-    /* temporary value */
-    padding-bottom: 2rem; /* temporary value */
-    border-radius: 20px; /* temporary value */
+    padding-bottom: 2rem;
+    border-radius: 20px;
 }
 
 article /* show block clickability */
@@ -208,7 +211,7 @@ article /* show block clickability */
     cursor: pointer;
 }
 
-.card /* cards container */
+.card /* previews container */
 {
     display: flex;
     width: 100%;
@@ -218,7 +221,7 @@ article /* show block clickability */
     align-items: center;
 }
 
-.card-preview /* hotels and activities previews */
+.card-preview /* previews common styling */
 {
     border: 5px solid white;
     border-radius: 20px;
@@ -248,7 +251,7 @@ article /* show block clickability */
     border-radius: 15px 15px 0 0;
 }
 
-.card--column /* activities previews layout*/
+.card--column /* popular hotels specific styling */
 {
     flex-direction: column;
     justify-content: space-between;
@@ -264,13 +267,14 @@ article /* show block clickability */
 .card-preview__image--float
 {
     float: left;
-    border-radius: 10px 0 0 10px;
+    border-radius: 15px 0 0 15px;
     height: 140px;
     max-width: 140px;
     margin-right: 20px;
 }
 
-.fa-star /* let it below car-preview__text to override the font-size */
+/* previews ratings */
+.fa-star /* let it below card-preview__text to override the font-size */
 {
     color: #0065fc;
     font-size: 13px;
@@ -281,6 +285,7 @@ article /* show block clickability */
     color: #cfcfcf;
 }
 
+/* hotels "Afficher plus" link */
 section a
 {
     display: inline-block;
@@ -294,6 +299,7 @@ section a
     margin-left: 2rem;
 }
 
+/* activities previews specific styling */
 .card-preview--activites, .card-preview__image--activites
 { 
     width: 300px;
@@ -304,6 +310,7 @@ section a
     border-top-right-radius: 20px;
 }
 
+/* test to brighten the calanque image */
 .card-preview__image--brighter
 {
     /* filter: brightness(1.2); result not satisfying, try rgba() */
@@ -311,6 +318,7 @@ section a
     filter: opacity(0.8) brightness(105%);
 }
 
+/* various activities preview's heights */
 .card-preview__image--h400
 {
     height: 400px;
@@ -340,6 +348,7 @@ section a
 {
     padding: 10px 0 10px 15px; /* overrides activities description styling */
 }
+
 footer
 {
     display: flex;
@@ -358,6 +367,7 @@ footer
     padding-left: 2rem;
 }
 
+/* to DRY */
 footer a
 {
     text-decoration: none;
@@ -367,9 +377,4 @@ footer a
 footer li
 {
     list-style: none;
-}
-
-ul
-{
-    padding-left: 0px;
 }

@@ -1,3 +1,5 @@
+/* || General styles */
+
 @font-face
 {
     font-family: 'Raleway';
@@ -7,22 +9,84 @@
 body, input
 {
     font-family: 'Raleway', sans-serif;
-    font-size: 14px;
 }
+
+h2
+{
+    padding-top: 2rem;
+    margin-left: 2rem;
+    margin-bottom: 0;
+}
+
+ul
+{
+    list-style: none;
+    padding-left: 0px;
+}
+
+a
+{
+    color: black;
+    text-decoration: none;
+}
+
+#hebergements, #populaires, footer
+{
+    background-color: #f2f2f2;
+}
+
+header, footer, .filtres, button, .filter-icon, .hotels, .card
+{
+    display: flex;
+}
+
+.filtres, button, .filter-icon, .card
+{
+    align-items: center;
+}
+
+section a, nav ul li /* enabling <a> margins, menu horizontal alignment and keep the margins enabled, */
+{
+    display: inline-block;
+}
+
+.sign-up, .filter-icon--small, .fa-star, button:hover, nav ul li a:hover
+{
+    color: #0065fc;
+}
+
+
+/* || Typography */
+
 
 h1, h2
 {
     font-size: 24px;
 }
 
-h3
+h3, .card-preview__text--heading
 {
     font-size: 16px;
 }
 
+p, .card-preview__text
+{
+	font-size: 14px;
+}
+
+.sign-up, button, section a
+{
+    font-weight: bold;
+}	
+
+
+
+
+/* || Header and navigation */
+
+
 header
 {
-    display: flex;
     margin-top: 30px;
 }
 
@@ -33,55 +97,49 @@ header
     padding-left: 30px;
 }
 
-/* separation logo and navigation bar */ 
-nav
+/* separation between logo and navigation bar */
+nav  
 {
-     margin-left: auto;
-}
-
-/* menu horizontal alignment and keep the margins enabled */ 
-nav ul li
-{
-    display: inline-block;
-    list-style: none;
+    margin-left: auto;
 }
 
 nav ul li a
 {
-    color: black;
-    text-decoration: none;
     padding: 40px 30px 20px 30px;
 }
 
-nav ul li a:focus
+nav ul li a:hover /* since we stay on the same page active is useless */
 {
-    color: #0065fc;
     border-top: solid #0065fc;
 }
 
-.sign-up
+.sign-up /* to fix, smaller than the nav links */
 {
     text-decoration: none;
-    font-weight: bold;
-    color:#0065fc;
     padding: 0px 50px 20px 30px;
 }
 
-/* town reseach form */
-input
+
+
+
+/* || Research section */
+
+
+/* section alignment */
+#research 
+{
+    margin-left: 1rem;
+}
+
+/* research form */
+input 
 {
     font-weight: 700;
     height: 45px;
 }
 
-/* town research section alignment */
-#research
-{
-    margin-left: 1rem;
-}
-
-/* form's label styling with the map marker */
-.map-marker
+/* form's label */
+.map-marker 
 {
     border-radius: 15px 0 0 15px;
     height: 17px;
@@ -90,8 +148,8 @@ input
     vertical-align: middle;
 }
 
-/* form's submit button styling */
-#search-button
+/* form's submit button */
+#search-button 
 {
     color: white;
     background-color: #0065fc;
@@ -99,17 +157,21 @@ input
     border: none;
 }
 
-/* form's text area styling */
-#town
+/* form's text area */
+#town 
 {
    border: 1px solid #f2f2f2;
 }
 
+
+
+
+/* || Filters */
+
+
 /* filters section */
 .filtres
 {
-    display: flex;
-    align-items: center;
     width: 750px;
     flex-wrap: wrap;
 }
@@ -117,9 +179,6 @@ input
 /* filters' buttons */
 button
 {
-    display: flex;
-    align-items: center;
-    font-weight: bold;
     height: 40px;
     padding: 0 10px 0 0;
     background-color: white;
@@ -130,21 +189,18 @@ button
 
 button:hover
 {
-    color: #0065fc;
     background-color: #deebff;
     border-color: #deebff;
     box-shadow: 2px 3px 5px #f2f2f2;
 }
 
-/* styling of the image inside the filter buttons */
+/* image inside the buttons */
 .filter-icon
 {
-    display: flex;
     height: 40px;
     width: 40px;
     background-color: #deebff;
-    justify-content: center;
-    align-items: center;
+    justify-content: center; /* and align-items: center in the general rules */
     border-radius: 100%;
     margin-right: 10px;
 }
@@ -155,7 +211,6 @@ button:hover
     height: 18px;
     width: 18px;
     background-color: transparent;
-    color: #0065fc;
     overflow: hidden;
     border: solid 1px #e1e1e1;
 }
@@ -167,24 +222,16 @@ button:hover
     font-size: 20px;  
 }
 
-/* to DRY through */
-ul
-{
-    list-style: none;
-    padding-left: 0px;
-}
 
-h2
-{
-    padding-top: 2rem;
-    margin-left: 2rem;
-    margin-bottom: 0;
-}
+
+
+/* || Hotels */
+
 
 /* hotels section */
+
 .hotels
 {
-    display: flex;
     justify-content: space-between;
 }
 
@@ -201,7 +248,6 @@ h2
 
 section
 {
-    background-color: #f2f2f2;
     padding-bottom: 2rem;
     border-radius: 20px;
 }
@@ -213,12 +259,10 @@ article /* show block clickability */
 
 .card /* previews container */
 {
-    display: flex;
     width: 100%;
     height: 500px;
     flex-wrap: wrap;
     justify-content: space-around;
-    align-items: center;
 }
 
 .card-preview /* previews common styling */
@@ -233,14 +277,8 @@ article /* show block clickability */
 
 .card-preview__text /* previews description styling */
 {
-    font-size: 14px;
     margin: 0 0 0 0;
     padding: 5px 0 0 10px;
-}
-
-.card-preview__text--heading
-{
-    font-size: 16px;
 }
 
 .card-preview__image /* previews photographs */
@@ -254,10 +292,10 @@ article /* show block clickability */
 .card--column /* popular hotels specific styling */
 {
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-between; /* to refactor watch out the BEM priorities */
     height: auto;
     max-height: 450px;    
-}
+}  
 
 .card-preview--w370
 {
@@ -276,8 +314,7 @@ article /* show block clickability */
 /* previews ratings */
 .fa-star /* let it below card-preview__text to override the font-size */
 {
-    color: #0065fc;
-    font-size: 13px;
+    font-size: 13px; /* see the general rules for the color */
 }
 
 .fa-star--gray
@@ -285,19 +322,17 @@ article /* show block clickability */
     color: #cfcfcf;
 }
 
-/* hotels "Afficher plus" link */
+/* hotels "Afficher plus" anchor alignment see display in general rules */
 section a
-{
-    display: inline-block;
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
-}
-
-#show-more
 {
     margin-left: 2rem;
 }
+
+
+
+
+/* || Activites section */
+
 
 /* activities previews specific styling */
 .card-preview--activites, .card-preview__image--activites
@@ -321,7 +356,7 @@ section a
 /* various activities preview's heights */
 .card-preview__image--h400
 {
-    height: 400px;
+    height: 400px; /* max height minus space for the card heading */
 }
 
 .card-preview__image--h200
@@ -349,11 +384,11 @@ section a
     padding: 10px 0 10px 15px; /* overrides activities description styling */
 }
 
-footer
-{
-    display: flex;
-    background-color: #f2f2f2;
-}
+
+
+
+/* || Footer */
+
 
 .footer-layout
 {
@@ -365,16 +400,4 @@ footer
 .footer-layout--padding-left /* aligning 1st of 3 lists */
 {
     padding-left: 2rem;
-}
-
-/* to DRY */
-footer a
-{
-    text-decoration: none;
-    color: black;
-}
-
-footer li
-{
-    list-style: none;
 }

@@ -11,10 +11,14 @@ body, input
     font-family: 'Raleway', sans-serif;
 }
 
+main
+{
+    max-width: 1400px;
+    margin: auto;
+}
+
 h2
 {
-    padding-top: 2rem;
-    margin-left: 2rem;
     margin-bottom: 0;
 }
 
@@ -30,9 +34,44 @@ a
     text-decoration: none;
 }
 
-#hebergements, #populaires, footer
+header, section, .hotels, .footer-layout--padding-left /* semantic sections, hotels section, first list of footer links */
+{
+    padding-left: 2rem;
+}
+
+header, .hotels, section
+{
+    padding-right: 2rem;
+}
+
+h2, .footer-layout
+{
+    padding-top: 2rem;
+}
+
+section, .footer-layout
+{
+    padding-bottom: 2rem;
+}
+
+.map-marker, #hebergements, #populaires, footer
 {
     background-color: #f2f2f2;
+}
+
+button, .card-preview 
+{
+    background-color: white;
+}
+
+#search-button, .fa-info-circle
+{
+    color: white;
+}
+
+.sign-up, .filter-icon--small, .fa-star, button:hover, nav ul li a:hover
+{
+    color: #0065fc;
 }
 
 header, footer, .filtres, button, .filter-icon, .hotels, .card
@@ -40,7 +79,7 @@ header, footer, .filtres, button, .filter-icon, .hotels, .card
     display: flex;
 }
 
-.filtres, button, .filter-icon, .card
+header, .filtres, button, .filter-icon, .card
 {
     align-items: center;
 }
@@ -50,31 +89,25 @@ section a, nav ul li /* enabling <a> margins, menu horizontal alignment and keep
     display: inline-block;
 }
 
-.sign-up, .filter-icon--small, .fa-star, button:hover, nav ul li a:hover
-{
-    color: #0065fc;
-}
-
 
 /* || Typography */
-
-
-h1, h2
-{
-    font-size: 24px;
-}
-
-h3, .card-preview__text--heading
-{
-    font-size: 16px;
-}
 
 p, .card-preview__text
 {
 	font-size: 14px;
 }
 
-.sign-up, button, section a
+h1, h2
+{
+    font-size: 24px;
+}
+
+h3, .card-preview__text--heading, .sign-up
+{
+    font-size: 16px;
+}
+
+.sign-up, button, section a, input
 {
     font-weight: bold;
 }	
@@ -94,7 +127,6 @@ header
 {
     width: 100px;
     height: 100%;
-    padding-left: 30px;
 }
 
 /* separation between logo and navigation bar */
@@ -113,10 +145,9 @@ nav ul li a:hover /* since we stay on the same page active is useless */
     border-top: solid #0065fc;
 }
 
-.sign-up /* to fix, smaller than the nav links */
+.sign-up
 {
-    text-decoration: none;
-    padding: 0px 50px 20px 30px;
+    padding: 0px 30px 0px 30px;
 }
 
 
@@ -125,16 +156,9 @@ nav ul li a:hover /* since we stay on the same page active is useless */
 /* || Research section */
 
 
-/* section alignment */
-#research 
-{
-    margin-left: 1rem;
-}
-
 /* research form */
-input 
+input
 {
-    font-weight: 700;
     height: 45px;
 }
 
@@ -143,7 +167,6 @@ input
 {
     border-radius: 15px 0 0 15px;
     height: 17px;
-    background-color: #f2f2f2;
     padding: 15px 16px 13px 16px;
     vertical-align: middle;
 }
@@ -151,7 +174,6 @@ input
 /* form's submit button */
 #search-button 
 {
-    color: white;
     background-color: #0065fc;
     border-radius: 0 15px 15px 0;
     border: none;
@@ -173,7 +195,7 @@ input
 .filtres
 {
     width: 750px;
-    flex-wrap: wrap;
+    flex-wrap: wrap; /* display flex in the general rules */
 }
 
 /* filters' buttons */
@@ -181,20 +203,19 @@ button
 {
     height: 40px;
     padding: 0 10px 0 0;
-    background-color: white;
     border-radius: 20px;
     border: solid #e1e1e1;
     margin-left: 20px;
 }
 
-button:hover
+button:hover /* filters disabled, use pseudo property to show the fuonctionality */
 {
     background-color: #deebff;
     border-color: #deebff;
     box-shadow: 2px 3px 5px #f2f2f2;
 }
 
-/* image inside the buttons */
+/* picture inside the buttons */
 .filter-icon
 {
     height: 40px;
@@ -211,14 +232,14 @@ button:hover
     height: 18px;
     width: 18px;
     background-color: transparent;
-    overflow: hidden;
+    overflow: hidden; /* allow to apply the border-radius property of .filter-icon class */
     border: solid 1px #e1e1e1;
 }
 
+/* picture of the result information */
 .fa-info-circle
 {
     background-color: #0065fc;
-    color: white;
     font-size: 20px;  
 }
 
@@ -230,91 +251,76 @@ button:hover
 
 /* hotels section */
 
-.hotels
-{
-    justify-content: space-between;
-}
-
-#hebergements
-{
-    flex: 2
-}
-
 #populaires
 {
   margin-left: 40px;
-  flex: 1;
+  max-width: 330px;
 }
 
 section
 {
-    padding-bottom: 2rem;
     border-radius: 20px;
 }
 
-article /* show block clickability */
+article
 {
-    cursor: pointer;
+    cursor: pointer; /* show block clickability, block made clickable with html attribute */
 }
 
-.card /* previews container */
+/* previews container */
+.card 
 {
-    width: 100%;
-    height: 500px;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    flex-wrap: wrap; /* display flex in general rules */
+    justify-content: space-between;
+    align-content: space-between;
 }
 
-.card-preview /* previews common styling */
+/* previews common styling */
+.card-preview 
 {
     border: 5px solid white;
     border-radius: 20px;
-    background-color: white;
     box-shadow: 0px 5px 5px lightgray;
-    width: 250px; /* smaller than responsive mode iPhone X safari 12 */
     max-height: 200px;
+    margin: 30px 0 0 0; 
 }
 
-.card-preview__text /* previews description styling */
+/* previews description styling */
+.card-preview__text 
 {
     margin: 0 0 0 0;
     padding: 5px 0 0 10px;
 }
 
-.card-preview__image /* previews photographs */
+/* previews photographs */
+.card-preview__image 
 {
-    width: 250px;
+    width: 240px;
     height: 120px;
     object-fit: cover;
     border-radius: 15px 15px 0 0;
 }
 
-.card--column /* popular hotels specific styling */
+/* popular hotels specific styling */
+.card-preview--popular
 {
-    flex-direction: column;
-    justify-content: space-between; /* to refactor watch out the BEM priorities */
-    height: auto;
-    max-height: 450px;    
-}  
-
-.card-preview--w370
-{
-    width: 370px;
+    width: 100%;
 }
 
+/* popular hotels specific styling */
 .card-preview__image--float
 {
     float: left;
     border-radius: 15px 0 0 15px;
     height: 140px;
-    max-width: 140px;
+    max-width: 120px;
     margin-right: 20px;
 }
 
 /* previews ratings */
-.fa-star /* let it below card-preview__text to override the font-size */
+.fa-star
 {
-    font-size: 13px; /* see the general rules for the color */
+    font-size: 13px; /* let it below card-preview__text to override the font-size, see the general rules for the color */
 }
 
 .fa-star--gray
@@ -322,7 +328,7 @@ article /* show block clickability */
     color: #cfcfcf;
 }
 
-/* hotels "Afficher plus" anchor alignment see display in general rules */
+/* hotels "Afficher plus" anchor alignment, see display in general rules */
 section a
 {
     margin-left: 2rem;
@@ -333,6 +339,14 @@ section a
 
 /* || Activites section */
 
+/* activites specific containers to reorder */
+.card--activites
+{
+    flex-direction: column;
+    height: auto;
+    max-height: 450px;
+    margin-top: 30px;    /* to refactor */
+}  
 
 /* activities previews specific styling */
 .card-preview--activites, .card-preview__image--activites
@@ -343,6 +357,7 @@ section a
     border: none;
     border-top-left-radius: 20px; /* overrides images top corners w/o changing cards bottom corners */
     border-top-right-radius: 20px;
+    margin: 0px;
 }
 
 /* test to brighten the calanque image */
@@ -353,7 +368,7 @@ section a
     filter: opacity(0.8) brightness(105%);
 }
 
-/* various activities preview's heights */
+/* activities preview's various heights */
 .card-preview__image--h400
 {
     height: 400px; /* max height minus space for the card heading */
@@ -379,9 +394,10 @@ section a
     height: 120px;
 }
 
+/* activities description specific */
 .card-preview__text--activites
 {
-    padding: 10px 0 10px 15px; /* overrides activities description styling */
+    padding: 10px 0 10px 15px;
 }
 
 
@@ -393,11 +409,6 @@ section a
 .footer-layout
 {
     flex: 1;
-    padding: 2rem 0 2rem 0;
     line-height: 1.9;  
 }
-
-.footer-layout--padding-left /* aligning 1st of 3 lists */
-{
-    padding-left: 2rem;
-}
+    

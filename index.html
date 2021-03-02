@@ -31,7 +31,7 @@
 
                 <form method="post" action="">
                 <label for="town"><img class="map-marker" src="images/map-marker-alt-solid.svg" alt=""></label><!-- white space
-                --><input type="search" size="30" value="Marseille, France" name="town" id="town"><!-- white space
+                --><input type="search" size="17" value="Marseille, France" name="town" id="town"><!-- white space
                 --><input type="submit" value="Rechercher" id="search-button">
                 </form>
             </section>
@@ -43,11 +43,11 @@
                 <button><span class="filter-icon"><img src="images/icons/heart-solid.svg" height="16px" alt=""></span>Romantique</button>
                 <button><span class="filter-icon"><img src="images/icons/dog-solid.svg" height="16px" alt=""></span>Animaux autorisés</button>
             
-                <div class="filtres"><div class="filter-icon filter-icon--small"><span class="fas fa-info-circle"></span></div><p>Plus de 500 logements sont disponibles dans cette ville</p></div> <!-- use the cdn to easily change size and color -->
+                <div class="filtres filtres--info"><div class="filter-icon filter-icon--small"><span class="fas fa-info-circle"></span></div><p class="filtres__result">Plus de 500 logements sont disponibles dans cette ville</p></div> <!-- use the cdn to easily change size and color -->
             </section>
         
 
-            <div class="hotels"> <!-- apply flexbox for both hotel and popular sections-->
+            <div class="hotels"> <!-- apply flexbox for both hotel and popular hotels sections-->
                 <section id="hebergements"> <!-- apply flexbox -->
                     <h2>Hébergements à Marseille</h2>
 
@@ -56,106 +56,106 @@
                             <img class="card-preview__image" src="images/hebergements/cannebiere.jpg" alt="">
                             <h3 class="card-preview__text card-preview__text--heading">Auberge la Cannebière</h3>
                             <p class="card-preview__text">Nuit à partir de 25 &#8364; </p>
-                            <span class="fas fa-star card-preview__text"></span> <!-- align star with BEM class-->
-                            <span class="fas fa-star"></span>
-                            <span class="fas fa-star"></span>
-                            <span class="fas fa-star"></span>
-                            <span class="fas fa-star fa-star--gray"></span>
+                            <span class="fas fa-star card-preview__text"></span><!-- align star with BEM class--><!-- white space
+                            --><span class="fas fa-star"></span><!-- white space
+                            --><span class="fas fa-star"></span><!-- white space
+                            --><span class="fas fa-star"></span><!-- white space
+                            --><span class="fas fa-star fa-star--gray"></span>
                         </article>
 
                         <article class="card-preview" onclick="location.href=''">
                             <img class="card-preview__image" src="images/hebergements/hotelport.jpg" alt="">
                             <h3 class="card-preview__text card-preview__text--heading">Hôtel du port</h3>
                             <p class="card-preview__text">Nuit à partir de 52 &#8364; </p>
-                            <span class="fas fa-star card-preview__text"></span> <!-- align star with BEM class set font-size with fa-star in stylesheet-->
-                            <span class="fas fa-star"></span>
-                            <span class="fas fa-star"></span>
-                            <span class="fas fa-star"></span>
-                            <span class="fas fa-star"></span>
+                            <span class="fas fa-star card-preview__text"></span><!-- align star with BEM class--><!-- white space
+                            --><span class="fas fa-star"></span><!-- white space
+                            --><span class="fas fa-star"></span><!-- white space
+                            --><span class="fas fa-star"></span><!-- white space
+                            --><span class="fas fa-star"></span>
                         </article>
 
                         <article class="card-preview" onclick="location.href=''">
                             <img class="card-preview__image" src="images/hebergements/mouettes.jpg" alt="">
                             <h3 class="card-preview__text card-preview__text--heading">Hôtel Les mouettes</h3>
                             <p class="card-preview__text">Nuit à partir de 76 &#8364; </p>
-                            <span class="fas fa-star card-preview__text"></span> <!-- align star with BEM class set font-size with fa-star in stylesheet-->
-                            <span class="fas fa-star"></span>
-                            <span class="fas fa-star"></span>
-                            <span class="fas fa-star"></span>
-                            <span class="fas fa-star fa-star--gray"></span>
+                            <span class="fas fa-star card-preview__text"></span><!-- align star with BEM class--><!-- white space
+                            --><span class="fas fa-star"></span><!-- white space
+                            --><span class="fas fa-star"></span><!-- white space
+                            --><span class="fas fa-star"></span><!-- white space
+                            --><span class="fas fa-star fa-star--gray"></span>
                         </article>
 
                         <article class="card-preview" onclick="location.href=''">
                             <img class="card-preview__image" src="images/hebergements/hotelmer.jpg" alt="">
                             <h3 class="card-preview__text card-preview__text--heading">Hôtel de la mer</h3>
                             <p class="card-preview__text">Nuit à partir de 46 &#8364; </p>
-                            <span class="fas fa-star card-preview__text"></span> <!-- align star with BEM class set font-size with fa-star in stylesheet-->
-                            <span class="fas fa-star"></span>
-                            <span class="fas fa-star"></span>
-                            <span class="fas fa-star fa-star--gray"></span>
-                            <span class="fas fa-star fa-star--gray"></span>
+                            <span class="fas fa-star card-preview__text"></span><!-- align star with BEM class--><!-- white space
+                            --><span class="fas fa-star"></span><!-- white space
+                            --><span class="fas fa-star"></span><!-- white space
+                            --><span class="fas fa-star fa-star--gray"></span><!-- white space
+                            --><span class="fas fa-star fa-star--gray"></span>
                         </article>
 
                         <article class="card-preview" onclick="location.href=''">
                             <img class="card-preview__image" src="images/hebergements/panier.jpg" alt="">
                             <h3 class="card-preview__text card-preview__text--heading">Auberge Le Panier</h3>
                             <p class="card-preview__text">Nuit à partir de 23 &#8364; </p>
-                            <span class="fas fa-star card-preview__text"></span> <!-- align star with BEM class set font-size with fa-star in stylesheet-->
-                            <span class="fas fa-star"></span>
-                            <span class="fas fa-star"></span>
-                            <span class="fas fa-star"></span>
-                            <span class="fas fa-star fa-star--gray"></span>
+                            <span class="fas fa-star card-preview__text"></span><!-- align star with BEM class--><!-- white space
+                            --><span class="fas fa-star"></span><!-- white space
+                            --><span class="fas fa-star"></span><!-- white space
+                            --><span class="fas fa-star"></span><!-- white space
+                            --><span class="fas fa-star fa-star--gray"></span>
                         </article>
 
                         <article class="card-preview" onclick="location.href=''">
                             <img class="card-preview__image" src="images/hebergements/hotelamina.jpg" alt="">
                             <h3 class="card-preview__text card-preview__text--heading">Hôtel chez Amina</h3>
                             <p class="card-preview__text">Nuit à partir de 96 &#8364; </p>
-                            <span class="fas fa-star card-preview__text"></span> <!-- align star with BEM class set font-size with fa-star in stylesheet-->
-                            <span class="fas fa-star"></span>
-                            <span class="fas fa-star"></span>
-                            <span class="fas fa-star"></span>
-                            <span class="fas fa-star"></span>
+                            <span class="fas fa-star card-preview__text"></span><!-- align star with BEM class--><!-- white space
+                            --><span class="fas fa-star"></span><!-- white space
+                            --><span class="fas fa-star"></span><!-- white space
+                            --><span class="fas fa-star"></span><!-- white space
+                            --><span class="fas fa-star"></span>
                         </article>
                     </div>
-                    <a href="" id="show-more"><p>Afficher plus</p></a>
+                    <a href=""><p id="show-more">Afficher plus</p></a>
                 </section>
 
                 <section id="populaires">
                     <h2>Les plus populaires</h2>
 
                     <div class="card">
-                        <article class="card-preview card-preview--popular" onclick="location.href=''">
+                        <article class="card-preview card-preview--popular" onclick="location.href=''"> <!-- modifiers for popular section -->
                             <img class="card-preview__image card-preview__image--float" src="images/hebergements/hotelmatin.jpg" alt="">
                             <h3 class="card-preview__text card-preview__text--heading">Hôtel Le soleil du matin</h3>
                             <p class="card-preview__text">Nuit à partir de 128 &#8364; </p>
-                            <span class="fas fa-star"></span>
-                            <span class="fas fa-star"></span>
-                            <span class="fas fa-star"></span>
-                            <span class="fas fa-star"></span>
-                            <span class="fas fa-star"></span>
+                            <span class="fas fa-star"></span><!-- white space
+                            --><span class="fas fa-star"></span><!-- white space
+                            --><span class="fas fa-star"></span><!-- white space
+                            --><span class="fas fa-star"></span><!-- white space
+                            --><span class="fas fa-star"></span>
                         </article>
 
-                        <article class="card-preview card-preview--popular" onclick="location.href=''">
+                        <article class="card-preview card-preview--popular" onclick="location.href=''"> <!-- modifiers for popular section -->
                             <img class="card-preview__image card-preview__image--float" src="images/hebergements/coeureau.jpg" alt="">
                             <h3 class="card-preview__text card-preview__text--heading">Au coeur de l'eau Chambres d'hôtes</h3>
                             <p class="card-preview__text">Nuit à partir de 71 &#8364; </p>
-                            <span class="fas fa-star"></span>
-                            <span class="fas fa-star"></span>
-                            <span class="fas fa-star"></span>
-                            <span class="fas fa-star"></span>
-                            <span class="fas fa-star fa-star--gray"></span>
+                            <span class="fas fa-star"></span><!-- white space
+                            --><span class="fas fa-star"></span><!-- white space
+                            --><span class="fas fa-star"></span><!-- white space
+                            --><span class="fas fa-star"></span><!-- white space
+                            --><span class="fas fa-star fa-star--gray"></span>
                         </article>
 
-                        <article class="card-preview card-preview--popular" onclick="location.href=''">
+                        <article class="card-preview card-preview--popular" onclick="location.href=''"> <!-- modifiers for popular section -->
                             <img class="card-preview__image card-preview__image--float" src="images/hebergements/hotelbleu.jpg" alt="">
                             <h3 class="card-preview__text card-preview__text--heading">Hôtel Tout bleu et Blanc</h3>
                             <p class="card-preview__text">Nuit à partir de 68 &#8364; </p>
-                            <span class="fas fa-star"></span>
-                            <span class="fas fa-star"></span>
-                            <span class="fas fa-star"></span>
-                            <span class="fas fa-star"></span>
-                            <span class="fas fa-star fa-star--gray"></span>
+                            <span class="fas fa-star"></span><!-- white space
+                            --><span class="fas fa-star"></span><!-- white space
+                            --><span class="fas fa-star"></span><!-- white space
+                            --><span class="fas fa-star"></span><!-- white space
+                            --><span class="fas fa-star fa-star--gray"></span>
                         </article>
                     </div>
                 </section>
@@ -163,33 +163,33 @@
                 
             <section id="activites">
                 <h2>Activités à Marseille</h2>
-                <div class="card card--activites">
+                <div class="card card--activites"> <!-- modifiers for activities section -->
                     <article class="card-preview card-preview--activites" onclick="location.href=''">
                         <img class="card-preview__image card-preview__image--activites card-preview__image--h400" src="images/activites/vieuxport.jpg" alt="">
                         <h3 class="card-preview__text card-preview__text--heading card-preview__text--activites">Vieux Port</h3>
                     </article>
 
-                    <article class="card-preview card-preview--activites" onclick="location.href=''">
+                    <article class="card-preview card-preview--activites" onclick="location.href=''"> <!-- modifiers for activities section -->
                         <img class="card-preview__image card-preview__image--activites card-preview__image--h200" src="images/activites/pomegues.jpg" alt="">
                         <h3 class="card-preview__text card-preview__text--heading card-preview__text--activites">Fort de Pomègues</h3>
                     </article>
 
-                    <article class="card-preview card-preview--activites" onclick="location.href=''">
+                    <article class="card-preview card-preview--activites" onclick="location.href=''"> <!-- modifiers for activities section -->
                         <img class="card-preview__image card-preview__image--activites card-preview__image--h120" src="images/activites/iles.jpg" alt="">
                         <h3 class="card-preview__text card-preview__text--heading card-preview__text--activites">Îles du Frioul</h3>
                     </article>
 
-                    <article class="card-preview card-preview--activites" onclick="location.href=''">
+                    <article class="card-preview card-preview--activites" onclick="location.href=''"> <!-- modifiers for activities section -->
                         <img class="card-preview__image card-preview__image--activites card-preview__image--h400 card-preview__image--brighter" src="images/activites/calanques.jpg" alt="">
                         <h3 class="card-preview__text card-preview__text--heading card-preview__text--activites">Parc National des Calanques</h3>
                     </article>
 
-                    <article class="card-preview card-preview--activites" onclick="location.href=''">
+                    <article class="card-preview card-preview--activites" onclick="location.href=''"> <!-- modifiers for activities section -->
                         <img class="card-preview__image card-preview__image--activites card-preview__image--h150" src="images/activites/notredame.jpg" alt="">
                         <h3 class="card-preview__text card-preview__text--heading card-preview__text--activites">Notre-Dame-de-la-Garde</h3>
                     </article>
                     
-                    <article class="card-preview card-preview--activites" onclick="location.href=''">
+                    <article class="card-preview card-preview--activites" onclick="location.href=''"> <!-- modifiers for activities section -->
                         <img class="card-preview__image card-preview__image--activites card-preview__image--h170" src="images/activites/parc.jpg" alt="">
                         <h3 class="card-preview__text card-preview__text--heading card-preview__text--activites">Parc Longchamp</h3>
                     </article>

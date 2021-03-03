@@ -29,11 +29,38 @@ a
     text-decoration: none;
 }
 
+label, input, button, article
+{
+    cursor: pointer; /* show block clickability, articles made clickable with html attribute */
+}
+
 /* previews common styling */
 section, .card-preview /* filters' buttons */
 {
     border-radius: 20px;
 }
+
+.card-preview:hover, #show-more:hover, button:hover
+{
+    translate: 0 -2px;
+}
+
+
+
+
+/* || Common sizing */
+
+/* popular hotels specific styling, filters section, previews photographs */
+.filtres, .card-preview--popular, .card-preview__image
+{
+    width: 100%;
+}
+
+/* activites specific containers and previews specific */
+.card--activites, .card-preview--activites
+{
+    max-height: 450px;
+}  
 
 
 
@@ -116,6 +143,11 @@ header, section, .footer-layout
     padding: 2px 0 3px 10px;
 }
 
+.card-preview__text--popular
+{
+    padding-top: 0.7rem;
+}
+
 /* activities description specific */
 .card-preview__text--activites
 {
@@ -148,7 +180,7 @@ button, .card-preview
     background-color: #0065fc;
 }
 
-button:hover, .filter-icon /* filters disabled, use pseudo property to show the fuonctionality */ /* picture inside the buttons */
+.filter-icon /* filters disabled, use pseudo property to show the fuonctionality */ /* picture inside the buttons */
 {
     background-color: #deebff;
 }
@@ -177,6 +209,12 @@ button:hover, .filter-icon /* filters disabled, use pseudo property to show the 
 header, footer, .filtres, button, .filter-icon, .hotels, .card, form
 {
     display: flex;
+}
+
+/* filters section */
+.filtres, .card 
+{
+    flex-wrap: wrap;
 }
 
 header, .filtres, button, .filter-icon, .card
@@ -267,7 +305,7 @@ label
 #search-button 
 {
     border-radius: 0 15px 15px 0;
-    border: none;
+    border: #0065fc;
 }
 
 /* form's text area */
@@ -282,17 +320,10 @@ label
 /* || Filters */
 
 
-/* filters section */
-.filtres
-{
-    width: 100%;
-    flex-wrap: wrap; /* display flex in the general rules */
-}
-
 /* filters' buttons */
 button
 {
-    height: 50px; /* 50px seems to small and 51 seems to big */
+    height: 50px; /* 50px seems to small and 51 seems to big */ /* to refactor*/
     padding: 0 10px 0 0;
     border: solid #e1e1e1;
     border-radius: 25px;
@@ -301,14 +332,14 @@ button
 
 button:hover /* filters disabled, use pseudo property to show the fuonctionality */
 {
-    border-color: #deebff;
+    /*border-color: #deebff;*/
     box-shadow: 2px 3px 5px #f2f2f2;
 }
 
 /* picture inside the buttons */
 .filter-icon
 {
-    height: 50px;
+    height: 50px; /* to refactor*/
     width: 50px;
     justify-content: center; /* and align-items: center in the general rules */
     border-radius: 100%;
@@ -337,23 +368,15 @@ button:hover /* filters disabled, use pseudo property to show the fuonctionality
 /* || Hotels */
 
 
-/* hotels section */
-
 #populaires
 {
   margin-left: 40px;
   max-width: 330px;
 }
 
-article
-{
-    cursor: pointer; /* show block clickability, block made clickable with html attribute */
-}
-
 /* previews container */
 .card 
 {
-    flex-wrap: wrap; /* display flex in general rules */
     justify-content: space-between;
     align-content: space-between;
 }
@@ -362,27 +385,19 @@ article
 .card-preview 
 {
     border: 5px solid white;
-    box-shadow: 0px 5px 5px #f2f2f2;
-    max-height: 200px;
+    box-shadow: 0px 5px 5px #e1e1e1;
+    min-width: 240px;
     margin: 30px 0 0 0; 
 }
 
 /* previews photographs */
 .card-preview__image 
 {
-    width: 240px;
     height: 120px;
     object-fit: cover;
     border-radius: 15px 15px 0 0;
 }
 
-/* popular hotels specific styling */
-.card-preview--popular
-{
-    width: 100%;
-}
-
-/* popular hotels specific styling */
 .card-preview__image--float
 {
     float: left;
@@ -399,6 +414,12 @@ article
     margin-right: 1px;
 }
 
+.fa-star--popular
+{
+    font-size: 11px;
+    translate: 0 35px; 
+}
+
 
 
 
@@ -408,8 +429,6 @@ article
 .card--activites
 {
     flex-direction: column;
-    height: auto;
-    max-height: 450px;
     margin-top: 20px;
 }  
 
@@ -417,15 +436,13 @@ article
 .card-preview--activites
 { 
     width: 300px;
-    height: auto;
-    max-height: 450px;
     border: none;
+    box-shadow: 0px 5px 5px #f2f2f2;
     margin: 0px; /* to refactor */
 }
 
 .card-preview__image--activites
 {
-    width: 100%;
     border-top-left-radius: 20px; /* overrides images top corners w/o changing cards bottom corners */
     border-top-right-radius: 20px;
 }
@@ -457,11 +474,6 @@ article
 .card-preview__image--h150
 {
     height: 150px;
-}
-
-.card-preview__image--h120
-{
-    height: 120px;
 }
 
 

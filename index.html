@@ -38,12 +38,12 @@
 
             <section class="filtres">
                 <h3>Filtres</h3>
-                <button><span class="filter-icon"><img src="images/icons/money-bill-wave-solid.svg" height="16px" alt=""></span>Economique</button> <!-- img inside a span to align it over the background with flexbox, use a span because button is an inline element -->
-                <button><span class="filter-icon"><img src="images/icons/child-solid.svg" height="16px" alt=""></span>Familial</button> <!-- make a test with a form, labels for the icon and input for the buttons --> 
-                <button><span class="filter-icon"><img src="images/icons/heart-solid.svg" height="16px" alt=""></span>Romantique</button>
-                <button><span class="filter-icon"><img src="images/icons/dog-solid.svg" height="16px" alt=""></span>Animaux autorisés</button>
+                <button><span class="filter-icon"><span class="fas fa-money-bill-wave"></span><!--<img src="images/icons/money-bill-wave-solid.svg" height="16px" alt="">--></span>Économique</button> <!-- img inside a span to align it over the background with flexbox, use a span because button is an inline element -->
+                <button><span class="filter-icon"><span class="fas fa-child"></span><!--<img src="images/icons/child-solid.svg" height="16px" alt="">--></span>Familial</button> <!-- make a test with a form, labels for the icon and input for the buttons --> 
+                <button><span class="filter-icon"><span class="fas fa-heart"></span><!--<img src="images/icons/heart-solid.svg" height="16px" alt="">--></span>Romantique</button>
+                <button><span class="filter-icon"><span class="fas fa-dog"></span><!--<img src="images/icons/dog-solid.svg" height="16px" alt="">--></span>Animaux autorisés</button>
             
-                <div class="filtres filtres--info"><div class="filter-icon filter-icon--small"><span class="fas fa-info-circle"></span></div><p class="filtres__result">Plus de 500 logements sont disponibles dans cette ville</p></div> <!-- use the cdn to easily change size and color -->
+                <div class="result filtres--info"><div class="filter-icon filter-icon--small"><span class="fas fa-info-circle"></span></div><p class="filtres__result">Plus de 500 logements sont disponibles dans cette ville</p></div> <!-- use the cdn to easily change size and color -->
             </section>
         
 
@@ -170,7 +170,7 @@
                     </article>
 
                     <article class="card-preview card-preview--activites" onclick="location.href=''"> <!-- modifiers for activities section -->
-                        <img class="card-preview__image card-preview__image--activites card-preview__image--h200" src="images/activites/pomegues.jpg" alt="">
+                        <img class="card-preview__image card-preview__image--activites card-preview__image--h190" src="images/activites/pomegues.jpg" alt="">
                         <h3 class="card-preview__text card-preview__text--heading card-preview__text--activites">Fort de Pomègues</h3>
                     </article>
 
@@ -185,7 +185,7 @@
                     </article>
 
                     <article class="card-preview card-preview--activites" onclick="location.href=''"> <!-- modifiers for activities section -->
-                        <img class="card-preview__image card-preview__image--activites card-preview__image--h150" src="images/activites/notredame.jpg" alt="">
+                        <img class="card-preview__image card-preview__image--activites card-preview__image--h140" src="images/activites/notredame.jpg" alt="">
                         <h3 class="card-preview__text card-preview__text--heading card-preview__text--activites">Notre-Dame-de-la-Garde</h3>
                     </article>
                     
@@ -198,7 +198,7 @@
         </main>
 
         <footer>
-            <div class="footer-layout footer-layout--padding-left">
+            <div class="footer-layout">
                 <h3>À propos</h3>
                 <ul>
                     <li><a href="">Fonctionnement du site</a></li>

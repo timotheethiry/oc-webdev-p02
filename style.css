@@ -1,0 +1,473 @@
+/* || General rules */
+
+@font-face
+{
+    font-family: 'Raleway';
+    src: url(fonts/Raleway-VariableFont_wght.ttf) format('truetype');
+}
+
+body, input, button
+{
+    font-family: 'Raleway', sans-serif;
+}
+
+main
+{
+    max-width: 1400px;
+    margin: auto;
+}
+
+ul
+{
+    list-style: none;
+    padding-left: 0px;
+}
+
+a
+{
+    color: black;
+    text-decoration: none;
+}
+
+label, input, button, article
+{
+    cursor: pointer; /* show block clickability, articles made clickable with html attribute */
+}
+
+/* previews common styling */
+section, .card-preview /* filters' buttons */
+{
+    border-radius: 20px;
+}
+
+.card-preview:hover, #show-more:hover, button:hover
+{
+    transform : translate(0, -2px);
+}
+
+
+
+
+/* || Common sizing */
+
+/* popular hotels specific styling, filters section, previews photographs */
+.filtres, .result, .card-preview__image
+{
+    width: 100%;
+}
+
+
+
+
+/* || Common spacing */
+
+
+h1, h2, .filtres__result, .card-preview__text 
+{
+    margin: 0;
+}
+
+p
+{
+    margin-bottom: 1rem;
+}
+
+header, .filtres--info, section a /* hotels "Afficher plus" anchor alignment */
+{
+    margin-top: 2rem;
+}
+
+/* separation between logo and navigation bar */
+nav
+{
+    margin-left: auto;
+}
+
+.filtres
+{
+    padding-left: 3rem;
+}
+
+header, nav ul li a, .sign-up, section, .hotels, footer /* inscription link, hotels section, first list of footer links */
+{
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+nav ul li a, footer
+{
+    padding-top: 2rem;
+}
+
+#hebergements, #populaires
+{
+    padding-top: 2.5rem;
+}
+
+header, section, footer
+{
+    padding-bottom: 2rem;
+}
+
+#activites
+{
+    padding-top: 3rem;
+    padding-bottom: 4rem;
+}
+
+/* previews description styling */
+.card-preview__text 
+{
+    padding: 2px 0 3px 10px;
+}
+
+.card-preview__text--popular
+{
+    padding-top: 0.7rem;
+}
+
+/* activities description specific */
+.card-preview__text--activites
+{
+    padding: 13px 0 13px 15px;
+}
+
+input
+{
+    padding: 0 15px 0 15px;
+}
+
+
+
+/* || Common colors */
+
+
+label, #hebergements, #populaires, footer
+{
+    background-color: #f2f2f2;
+}
+
+button, .card-preview 
+{
+    background-color: white;
+}
+
+/* picture of the result information */
+.fa-info-circle, #search-button /* form's submit button */
+{
+    background-color: #0065fc;
+}
+
+.filter-icon /* filters disabled, use pseudo property to show the fuonctionality */ /* picture inside the buttons */
+{
+    background-color: #deebff;
+}
+
+.sign-up, .fas, .filter-icon--small, .fa-star, button:hover, nav ul li a:hover
+{
+    color: #0065fc;
+}
+
+#search-button, .fa-info-circle /* overrides .fas color */
+{
+    color: white;
+}
+
+.fa-star--gray
+{
+    color: #cfcfcf;
+}
+
+
+
+
+/* || Common display and alignment */
+
+
+header, footer, .filtres, button, .filter-icon, .result, .hotels, .card, form
+{
+    display: flex;
+}
+
+/* filters section */
+.filtres, .card 
+{
+    flex-wrap: wrap;
+}
+
+header, .filtres, button, .filter-icon, .result, .card
+{
+    align-items: center;
+}
+
+label, section a, nav ul li /* enable <a> margins, nav horizontal and keep the li margins enabled, */
+{
+    display: inline-block;
+}
+
+
+
+
+/* || Common typography */
+
+p, .card-preview__text
+{
+	font-size: 14px;
+}
+
+h1, h2
+{
+    font-size: 22px;
+}
+
+h3, .card-preview__text--heading, .sign-up
+{
+    font-size: 16px;
+}
+
+input, button, .fas, footer h3, #show-more
+{
+    font-size: 18px;
+}
+
+.sign-up, button, section a, input
+{
+    font-weight: bold;
+}	
+
+
+
+
+/* || Header and navigation */
+
+
+#logo
+{
+    width: 100px;
+    height: 100%;
+}
+
+nav ul li a:hover /* since we stay on the same page active is useless, to modify for mobile mock-up */
+{
+    border-top: solid #0065fc;
+}
+
+
+
+
+/* || Research section */
+
+
+/* research form */
+label, input
+{
+    height: 50px;
+}
+
+label
+{
+    width: 50px;
+    border-radius: 15px 0 0 15px;
+}
+
+/* form's label */
+.map-marker 
+{
+    width: 14px;
+    height: 17px;
+    padding: 17px 18px 0 18px;
+}
+
+/* form's submit button */
+#search-button 
+{
+    border-radius: 0 15px 15px 0;
+    border: #0065fc;
+}
+
+/* form's text area */
+#town 
+{
+   border: 1px solid #f2f2f2;
+}
+
+
+
+
+/* || Filters */
+
+
+/* filters' buttons */
+button
+{
+    height: 50px; /* 50px seems to small and 51 seems to big */ /* to refactor*/
+    padding: 0 20px 0 0;
+    border: solid #e1e1e1;
+    border-radius: 25px;
+    margin-left: 30px;
+}
+
+button:hover /* filters disabled, use pseudo property to show the fuonctionality */
+{
+    /*border-color: #deebff;*/
+    box-shadow: 2px 3px 5px #f2f2f2;
+}
+
+/* picture inside the buttons */
+.filter-icon
+{
+    height: 50px; /* to refactor*/
+    width: 50px;
+    justify-content: center; /* and align-items: center in the general rules */
+    border-radius: 100%;
+    margin-right: 10px;
+    transform : translate(-5px);
+}
+
+/* result information from the research */
+.filter-icon--small
+{
+    height: 23px;
+    width: 23px;
+    overflow: hidden; /* allow to apply the border-radius property of .filter-icon class */
+    border: solid 1px #e1e1e1;
+}
+
+/* picture of the result information */
+.fa-info-circle
+{
+    font-size: 25px;  
+}
+
+
+
+
+/* || Hotels */
+
+
+#populaires 
+{
+  margin-left: 40px;
+  max-width: 330px;
+}
+
+/* previews container */
+.card 
+{
+    justify-content: space-between;
+    align-content: space-between;
+}
+
+/* previews common styling */
+.card-preview 
+{
+    border: 5px solid white;
+    box-shadow: 0px 5px 5px #e1e1e1;
+    width: 240px;
+    margin: 30px 0 0 0; 
+}
+
+.card-preview--popular
+{
+    width: 320px;
+}
+
+/* previews photographs */
+.card-preview__image 
+{
+    height: 120px;
+    object-fit: cover;
+    border-radius: 15px 15px 0 0;
+}
+
+.card-preview__image--float
+{
+    float: left;
+    border-radius: 15px 0 0 15px; /* try to refactor */
+    height: 140px;
+    max-width: 120px;
+    margin-right: 20px;
+}
+
+/* previews ratings */
+.fa-star
+{
+    font-size: 12px; /* let it below card-preview__text to override the font-size, see the general rules for the color */
+    margin-right: 1px;
+}
+
+.fa-star--popular
+{
+    font-size: 11px;
+    transform : translate(0, 35px); 
+}
+
+
+
+
+/* || Activites section */
+
+/* activites specific containers to reorder */
+.card--activites
+{
+    flex-direction: column;
+    height: 450px;
+    margin-top: 20px;
+}  
+
+/* activities previews specific styling */
+.card-preview--activites
+{ 
+    width: 300px;
+    border: none;
+    box-shadow: 0px 5px 5px #f2f2f2;
+    margin: 0px; /* to refactor */
+}
+
+.card-preview__image--activites
+{
+    border-top-left-radius: 20px; /* overrides images top corners w/o changing cards bottom corners */
+    border-top-right-radius: 20px;
+}
+
+/* test to brighten the calanque image */
+.card-preview__image--brighter
+{
+    /* filter: brightness(1.2); not satisfying try rgba() */
+    /* background: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)); */
+    filter: opacity(0.8) brightness(105%);
+}
+
+/* activities preview's various heights */
+.card-preview__image--h400
+{
+    height: 400px; /* max height minus space for the card heading */
+}
+
+.card-preview__image--h190
+{
+    height: 190px;
+}
+
+.card-preview__image--h170
+{
+    height: 170px;
+}
+
+.card-preview__image--h140
+{
+    height: 140px;
+}
+
+
+
+
+/* || Footer */
+
+
+.footer-layout
+{
+    flex: 1;
+    line-height: 1.9;  
+}
+    

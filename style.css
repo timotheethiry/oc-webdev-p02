@@ -514,6 +514,35 @@ footer
 
 
 
+@media screen and (max-width: 1000px)
+{
+
+    /* || Filters */
+
+    .filtres
+    {
+        padding-left: 2rem;
+    }
+    
+    .filtres h2
+    {
+        width: 100%;
+    }
+
+    button
+    {
+        margin: 1rem 30px 0 0;
+    }
+
+    .filtres__result
+    {
+        padding-right: 3rem;
+    }
+}
+
+
+
+
 @media screen and (max-width: 800px)
 {
 

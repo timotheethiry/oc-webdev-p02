@@ -88,7 +88,6 @@ header
 #logo
 {
     width: 100px;
-    height: 100%;
 }
 
 /* separation between logo and navigation bar */
@@ -505,4 +504,83 @@ footer
     { 
         max-width: 23%; /* width: 300px; */
     }
-} 
+}
+
+
+@media screen and (max-width: 800px)
+{
+    header
+    {
+        margin-top: 2rem;
+        padding: 0 2rem 2rem 2rem;
+    }
+
+    nav ul li a
+    {
+        padding: 2rem 1rem 0 1rem;
+        font-size: 14px;
+    }
+
+    nav ul li a:hover /* to modify for mobile mock-up */
+    {
+        border-top: solid #0065fc;
+        color: #0065fc;
+    }
+
+    .sign-up
+    {
+        padding: 0 1rem;
+        margin: 16px 0 15px 0;
+        color: #0065fc;
+        font-size: 14px;
+        font-weight: bold;
+    }
+}
+
+
+@media screen and (max-width: 600px)
+{
+    header
+    {
+        flex-wrap: wrap;
+        padding: 0 0 2rem 0;
+    }
+    
+    #logo
+    {
+        width: 90px;
+        order: 1;
+        padding-left: 1rem;
+    }
+
+    nav
+    {
+        order: 3;
+        width: 100%;
+        margin-top: 1rem;
+    }
+
+    nav ul li
+    {
+        width: 49%;
+    }
+
+    nav ul li a
+    {
+        padding: 0 50% 1rem 35%;
+        border-bottom: solid #f2f2f2;
+    }
+
+    nav ul li a:hover
+    
+    {
+        border-top: none;
+        border-color: #0065fc;
+    }
+
+    header a
+    {
+        order: 2;
+        margin-left: auto;
+    } 
+}

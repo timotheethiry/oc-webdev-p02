@@ -678,6 +678,32 @@ footer
     {
         width: 100%;
     }
+
+
+
+    /* || Footer */
+
+    footer
+    {
+        justify-content: space-evenly;
+    }
+
+    .footer-layout
+    {
+        flex: none;
+    }
+
+    footer h3
+    {
+        font-size: 16px;
+        margin-bottom: 0.5rem;
+    }
+    
+    footer ul
+    {
+        font-size: 14px;
+        margin-top: 0;
+    }
 }
 
 
@@ -808,6 +834,14 @@ footer
     .card-preview__image--activites
     {
         height: 140px;
+    }
+
+
+    /* || Footer */
+
+    footer
+    {
+        flex-direction: column;
     }
 }
 
@@ -948,5 +982,13 @@ footer
     .card-preview--activites
     {
         margin-bottom: 1.5rem;
+    }
+
+
+    /* || Footer */
+
+    footer
+    {
+        justify-content: flex-start;
     }
 }

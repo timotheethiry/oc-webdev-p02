@@ -778,12 +778,36 @@ footer
 
     .card-preview
     {
-        width: 320px;
+        box-sizing: border-box;
+        max-width: 330px;
+        width: 330px;
     }
 
     .card-preview--popular
     {
         margin-right: 0;
+    }
+
+
+    /* || Activites */
+
+    .card--activites
+    {
+        flex-direction: row;
+        height: auto;
+        padding-top: 2rem;
+    }
+
+    .card-preview--activites
+    {
+        height: 190px;
+        overflow: hidden;
+        margin-bottom: 2rem;
+    }
+
+    .card-preview__image--activites
+    {
+        height: 140px;
     }
 }
 
@@ -899,12 +923,17 @@ footer
     #populaires
     {
         border-radius: 0;
-        padding: 2rem 1rem 0 1rem;
+        padding: 2rem 1rem 1rem 1rem;
+    }
+
+    .card-preview
+    {
+        margin-bottom: 1rem;
     }
 
     #show-more
     {
-        margin: 0;
+        margin: 1rem 0 0 0;
         font-size: 16px;
     }
 
@@ -912,5 +941,12 @@ footer
     /* || Activites */
 
     #activites
-    {}
+    {
+        padding: 1.5rem 1rem;
+    }
+
+    .card-preview--activites
+    {
+        margin-bottom: 1.5rem;
+    }
 }

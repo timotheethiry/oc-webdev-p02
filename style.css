@@ -285,13 +285,14 @@ button:hover /* filters disabled, use pseudo property to show the fuonctionality
     flex-wrap: wrap;
     justify-content: space-between;
     align-content: space-between;
+    padding-top: 2rem;
 }
 
 /* previews common styling */
 .card-preview 
 {
     width: 30%; /* 240px; */
-    margin: 30px 0 0 0;
+    margin: 0 0 2rem 0;
     border: 5px solid white;
     border-radius: 20px;
     background-color: white;
@@ -349,7 +350,7 @@ button:hover /* filters disabled, use pseudo property to show the fuonctionality
 
 #show-more /* hotels "Afficher plus" anchor alignment */
 {
-    margin-top: 3rem;
+    margin-top: 1rem;
     font-weight: bold;
 }
 
@@ -367,6 +368,7 @@ button:hover /* filters disabled, use pseudo property to show the fuonctionality
 {
   margin-left: 40px;
   padding-top: 2.5rem;
+  padding-bottom: 0;
   max-width: 25%; /* 330px; */
   background-color: #f2f2f2;
 }
@@ -404,7 +406,7 @@ button:hover /* filters disabled, use pseudo property to show the fuonctionality
 {
     flex-direction: column;
     height: 450px;
-    margin-top: 20px;
+    padding-top: 1rem;
 }  
 
 /* activities previews specific styling */
@@ -484,6 +486,7 @@ footer
 
 @media screen and (max-width: 1380px)
 {
+
     #populaires
     {
         margin-left: 2rem;
@@ -514,9 +517,112 @@ footer
 
 
 
+@media screen and (max-width: 1300px)
+{
+
+    /* || Hotels */
+    
+    .hotels
+    {
+        flex-wrap: wrap;
+    }
+    
+    #hebergements
+    {
+        order: 2;
+        width: 100%;
+        margin-top: 2rem;
+        padding-top: 2rem;
+    }
+    
+    #populaires
+    {
+        order: 1;
+        max-width: 100%;
+        width: 100%;
+        margin-left: 0;
+        padding-top: 2rem;
+    }
+
+    #hebergements .card
+    {
+        justify-content: space-around;
+    }
+    
+    .card-preview
+    {
+        width: 25%;
+    }
+
+    .card-preview--popular
+    {
+        width: 30%;
+    }
+}
+
+
+
+
+@media screen and (max-width: 1200px)
+{
+
+    /* || Hotels */
+    
+    #populaires
+    {
+        padding-right: 0;
+    }
+    
+    .card
+    {
+        justify-content: flex-start;
+    }
+    
+    .card-preview
+    {
+        width: 25%;
+    }
+
+    .card-preview--popular
+    {
+        width: 50%;
+        margin-right: 2rem;
+    }
+}
+
+
+
+
+@media screen and (max-width: 1100px)
+{
+
+    /* || Hotels */
+    
+    .card-preview
+    {
+        width: 27%;
+    }
+
+    .card-preview--popular
+    {
+        width: 50%;
+    }
+}
+
+
+
+
 @media screen and (max-width: 1000px)
 {
 
+    /* || Research */
+
+    input
+    {
+        font-size: ;
+    }
+
+    
     /* || Filters */
 
     .filtres
@@ -532,11 +638,59 @@ footer
     button
     {
         margin: 1rem 30px 0 0;
+        font-size: 16px;
     }
 
     .filtres__result
     {
         padding-right: 3rem;
+    }
+
+
+    /* || Hotels */
+    
+    .card-preview
+    {
+        width: 33%;
+    }
+
+    .card-preview--popular
+    {
+        width: 50%;
+    }
+}
+
+
+
+
+@media screen and (max-width: 900px)
+{
+
+    /* || Hotels */
+    
+    .card-preview
+    {
+        width: 35%;
+        max-width: 320px;
+    }
+
+    .card-preview--popular
+    {
+        width: 100%;
+    }
+}
+
+
+
+
+@media screen and (max-width: 835px)
+{
+
+    /* || Hotels */
+    
+    .card
+    {
+        justify-content: center;
     }
 }
 
@@ -547,7 +701,6 @@ footer
 {
 
     /* || Header */
-
 
     header
     {
@@ -575,14 +728,72 @@ footer
         font-size: 14px;
         font-weight: bold;
     }
+
+
+    /* || Hotels */
+    
+    .card-preview
+    {
+        width: 40%;
+    }
+
+    .card-preview--popular
+    {
+        width: 100%;
+    }
 }
+
+
+
+
+@media screen and (max-width: 750px)
+{
+
+    /* || Hotels */
+    
+    .card-preview
+    {
+        width: 45%;
+        max-width: 320px;
+    }
+
+    .card-preview--popular
+    {
+        width: 100%;
+    }
+}
+
+
+
+
+@media screen and (max-width: 700px)
+{
+
+    /* || Hotels */
+    
+    #populaires
+    {
+        padding: 2rem 2rem 0 2rem;
+    }
+
+    .card-preview
+    {
+        width: 320px;
+    }
+
+    .card-preview--popular
+    {
+        margin-right: 0;
+    }
+}
+
+
 
 
 @media screen and (max-width: 600px)
 {
 
     /* || Header */
-
 
     header
     {
@@ -629,9 +840,7 @@ footer
     }
 
 
-
     /* || Research */
-
     
     section
     {
@@ -659,4 +868,49 @@ footer
         height: 18px;
         transform: translate(-15px, 0);
     }
+
+
+    /* || Filtres */
+
+    .filtres
+    {
+        padding-left: 1rem;
+    }
+
+
+    /* || Hotels */
+
+    .hotels
+    {
+        padding: 0;
+    }
+
+    #hebergements
+    {
+        background-color: transparent;
+        margin-top: 0;
+    }
+
+    #hebergements .card
+    {
+        padding-top: 1rem;
+    }
+
+    #populaires
+    {
+        border-radius: 0;
+        padding: 2rem 1rem 0 1rem;
+    }
+
+    #show-more
+    {
+        margin: 0;
+        font-size: 16px;
+    }
+
+
+    /* || Activites */
+
+    #activites
+    {}
 }

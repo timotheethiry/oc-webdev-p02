@@ -32,18 +32,20 @@
                 <form method="post" action="">
                 <label for="town"><img class="map-marker" src="images/map-marker-alt-solid.svg" alt=""></label><!-- white space
                 --><input type="search" size="17" value="Marseille, France" name="town" id="town"><!-- white space
-                --><input type="submit" value="Rechercher" id="search-button">
+                --><input type="submit" value="Rechercher" id="search-button"><!-- white space
+                --><input type="image" src="images/icons/search-solid.svg" name="lens-button" id="lens-button">
+
                 </form>
             </section>
 
             <section class="filtres">
-                <h3>Filtres</h3>
+                <h2>Filtres</h2><!-- change value from h3 to h2 referencement -->
                 <button><span class="filter-icon"><span class="fas fa-money-bill-wave"></span><!--<img src="images/icons/money-bill-wave-solid.svg" height="16px" alt="">--></span>Économique</button> <!-- img inside a span to align it over the background with flexbox, use a span because button is an inline element -->
                 <button><span class="filter-icon"><span class="fas fa-child"></span><!--<img src="images/icons/child-solid.svg" height="16px" alt="">--></span>Familial</button> <!-- make a test with a form, labels for the icon and input for the buttons --> 
                 <button><span class="filter-icon"><span class="fas fa-heart"></span><!--<img src="images/icons/heart-solid.svg" height="16px" alt="">--></span>Romantique</button>
                 <button><span class="filter-icon"><span class="fas fa-dog"></span><!--<img src="images/icons/dog-solid.svg" height="16px" alt="">--></span>Animaux autorisés</button>
             
-                <div class="result filtres--info"><div class="filter-icon filter-icon--small"><span class="fas fa-info-circle"></span></div><p class="filtres__result">Plus de 500 logements sont disponibles dans cette ville</p></div> <!-- use the cdn to easily change size and color -->
+                <div class="result"><div class="filter-icon filter-icon--small"><span class="fas fa-info-circle"></span></div><p class="filtres__result">Plus de 500 logements sont disponibles dans cette ville</p></div> <!-- use the cdn to easily change size and color -->
             </section>
         
 
@@ -51,7 +53,7 @@
                 <section id="hebergements"> <!-- apply flexbox -->
                     <h2>Hébergements à Marseille</h2>
 
-                    <div class="card">
+                    <div class="card card--hebergements">
                         <article class="card-preview" onclick="location.href=''"> <!-- make the whole block clickable see css fo cursor styling-->
                             <img class="card-preview__image" src="images/hebergements/cannebiere.jpg" alt="">
                             <h3 class="card-preview__text card-preview__text--heading">Auberge la Cannebière</h3>
@@ -124,9 +126,9 @@
                 <section id="populaires">
                     <h2>Les plus populaires</h2>
 
-                    <div class="card">
+                    <div class="card card--populaires">
                         <article class="card-preview card-preview--popular" onclick="location.href=''"> <!-- modifiers for popular section -->
-                            <img class="card-preview__image card-preview__image--float" src="images/hebergements/hotelmatin.jpg" alt="">
+                            <img class="card-preview__image card-preview__image--popular" src="images/hebergements/hotelmatin.jpg" alt="">
                             <h3 class="card-preview__text card-preview__text--heading card-preview__text--popular">Hôtel Le soleil du matin</h3>
                             <p class="card-preview__text">Nuit à partir de 128 &#8364; </p>
                             <span class="fas fa-star fa-star--popular"></span><!-- white space
@@ -137,7 +139,7 @@
                         </article>
 
                         <article class="card-preview card-preview--popular" onclick="location.href=''"> <!-- modifiers for popular section -->
-                            <img class="card-preview__image card-preview__image--float" src="images/hebergements/coeureau.jpg" alt="">
+                            <img class="card-preview__image card-preview__image--popular" src="images/hebergements/coeureau.jpg" alt="">
                             <h3 class="card-preview__text card-preview__text--heading card-preview__text--popular">Au coeur de l'eau Chambres d'hôtes</h3>
                             <p class="card-preview__text">Nuit à partir de 71 &#8364; </p>
                             <span class="fas fa-star fa-star--popular"></span><!-- white space
@@ -148,7 +150,7 @@
                         </article>
 
                         <article class="card-preview card-preview--popular" onclick="location.href=''"> <!-- modifiers for popular section -->
-                            <img class="card-preview__image card-preview__image--float" src="images/hebergements/hotelbleu.jpg" alt="">
+                            <img class="card-preview__image card-preview__image--popular" src="images/hebergements/hotelbleu.jpg" alt="">
                             <h3 class="card-preview__text card-preview__text--heading card-preview__text--popular">Hôtel Tout bleu et Blanc</h3>
                             <p class="card-preview__text">Nuit à partir de 68 &#8364; </p>
                             <span class="fas fa-star fa-star--popular"></span><!-- white space
@@ -165,12 +167,12 @@
                 <h2>Activités à Marseille</h2>
                 <div class="card card--activites"> <!-- modifiers for activities section -->
                     <article class="card-preview card-preview--activites" onclick="location.href=''">
-                        <img class="card-preview__image card-preview__image--activites card-preview__image--h400" src="images/activites/vieuxport.jpg" alt="">
+                        <img class="card-preview__image card-preview__image--activites card-preview__image--tall" src="images/activites/vieuxport.jpg" alt="">
                         <h3 class="card-preview__text card-preview__text--heading card-preview__text--activites">Vieux Port</h3>
                     </article>
 
                     <article class="card-preview card-preview--activites" onclick="location.href=''"> <!-- modifiers for activities section -->
-                        <img class="card-preview__image card-preview__image--activites card-preview__image--h190" src="images/activites/pomegues.jpg" alt="">
+                        <img class="card-preview__image card-preview__image--activites card-preview__image--fort" src="images/activites/pomegues.jpg" alt="">
                         <h3 class="card-preview__text card-preview__text--heading card-preview__text--activites">Fort de Pomègues</h3>
                     </article>
 
@@ -180,17 +182,17 @@
                     </article>
 
                     <article class="card-preview card-preview--activites" onclick="location.href=''"> <!-- modifiers for activities section -->
-                        <img class="card-preview__image card-preview__image--activites card-preview__image--h400 card-preview__image--brighter" src="images/activites/calanques.jpg" alt="">
+                        <img class="card-preview__image card-preview__image--activites card-preview__image--tall card-preview__image--brighter" src="images/activites/calanques.jpg" alt="">
                         <h3 class="card-preview__text card-preview__text--heading card-preview__text--activites">Parc National des Calanques</h3>
                     </article>
 
                     <article class="card-preview card-preview--activites" onclick="location.href=''"> <!-- modifiers for activities section -->
-                        <img class="card-preview__image card-preview__image--activites card-preview__image--h140" src="images/activites/notredame.jpg" alt="">
+                        <img class="card-preview__image card-preview__image--activites card-preview__image--dame" src="images/activites/notredame.jpg" alt="">
                         <h3 class="card-preview__text card-preview__text--heading card-preview__text--activites">Notre-Dame-de-la-Garde</h3>
                     </article>
                     
                     <article class="card-preview card-preview--activites" onclick="location.href=''"> <!-- modifiers for activities section -->
-                        <img class="card-preview__image card-preview__image--activites card-preview__image--h170" src="images/activites/parc.jpg" alt="">
+                        <img class="card-preview__image card-preview__image--activites card-preview__image--parc" src="images/activites/parc.jpg" alt="">
                         <h3 class="card-preview__text card-preview__text--heading card-preview__text--activites">Parc Longchamp</h3>
                     </article>
                 </div>

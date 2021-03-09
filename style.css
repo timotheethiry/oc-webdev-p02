@@ -400,8 +400,7 @@ button:hover /* filters disabled, use pseudo property to show the fuonctionality
 
 #activites
 {
-    padding-top: 3rem;
-    padding-bottom: 4rem;
+    padding: 3rem 2rem;
 }
 
 /* activites specific containers*/
@@ -487,8 +486,6 @@ footer
 /*  || Responsiveness */
 
 
-
-
 @media screen and (max-width: 1300px)
 {
 
@@ -506,7 +503,20 @@ footer
         margin-top: 2rem;
         padding-top: 2rem;
     }
+
+    .card--hebergements
+    {
+        justify-content: space-around;
+    }
+
+    .card-preview  
+    {
+        width: 25%;
+    }
     
+
+    /* || Popular hotels */
+
     #populaires
     {
         order: 1;
@@ -516,25 +526,18 @@ footer
         padding-top: 2rem;
     }
 
-    .card--hebergements
-    {
-        justify-content: space-around;
-    }
-    
     .card--populaires
     {
         justify-content: space-between;
-    }
-    
-    .card-preview  
-    {
-        width: 25%;
     }
 
     .card-preview--popular
     {
         width: 30%;
     }
+
+
+    /* || Activities */
 
     .card-preview--activites
     { 
@@ -548,7 +551,7 @@ footer
 @media screen and (max-width: 1200px)
 {
 
-    /* || Hotels */
+    /* || Popular hotels */
     
     #populaires
     {
@@ -569,11 +572,17 @@ footer
 
     /* || Activites */
 
+    #activites
+    {
+        padding-bottom: 2rem;
+    }
+    
     .card--activites
     {
         justify-content: space-around;
         align-content: space-evenly;
         height: 1000px;
+        padding-top: 0;
     }
 
     .card-preview--activites
@@ -627,7 +636,6 @@ footer
 
 @media screen and (max-width: 1100px)
 {
-    /* || Hotels */
     
     .card-preview 
     {
@@ -720,7 +728,6 @@ footer
     }
 
 
-
     /* || Footer */
 
     footer
@@ -800,8 +807,6 @@ footer
 
 @media screen and (max-width: 750px)
 {
-
-    /* || Hotels */
     
     .card-preview 
     {
@@ -827,16 +832,16 @@ footer
 
     /* || Hotels */
     
-    #populaires
-    {
-        padding: 2rem 2rem 0 2rem;
-    }
-
     .card-preview 
     {
         box-sizing: border-box;
         max-width: 330px;
         width: 330px;
+    }
+    
+    #populaires
+    {
+        padding: 2rem 2rem 0 2rem;
     }
 
     .card-preview--popular
@@ -846,6 +851,11 @@ footer
 
 
     /* || Activites */
+
+    #activites
+    {
+        padding-bottom: 2rem;
+    }
 
     .card--activites
     {
@@ -999,16 +1009,16 @@ footer
         margin-bottom: 1rem;
     }
 
-    #populaires
-    {
-        border-radius: 0;
-        padding: 2rem 1rem 1rem 1rem;
-    }
-
     #show-more
     {
         margin: 1rem 0 0 0;
         font-size: 16px;
+    }
+
+    #populaires
+    {
+        border-radius: 0;
+        padding: 2rem 1rem 1rem 1rem;
     }
 
 

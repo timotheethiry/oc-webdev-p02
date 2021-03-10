@@ -365,6 +365,15 @@ button:hover /* filters disabled, use pseudo property to show the fuonctionality
   padding-bottom: 0;
   max-width: 25%; /* 330px; */
   background-color: #f2f2f2;
+  position: relative;
+}
+
+#populaires .chart
+{
+    position: absolute;
+    height: 22px;
+    top: 2.5rem;
+    right: 2rem;
 }
 
 .card-preview--popular
@@ -524,6 +533,11 @@ footer
         width: 100%;
         margin-left: 0;
         padding-top: 2rem;
+    }
+
+    #populaires .chart
+    {
+        top: 2rem;
     }
 
     .card--populaires
@@ -1015,10 +1029,18 @@ footer
         font-size: 16px;
     }
 
+
+    /* || Popular hotels */
+    
     #populaires
     {
         border-radius: 0;
         padding: 2rem 1rem 1rem 1rem;
+    }
+
+    #populaires .chart
+    {
+        right: 1rem;
     }
 
 

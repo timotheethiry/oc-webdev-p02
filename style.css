@@ -164,7 +164,7 @@ input
 #search-button 
 {
     border-radius: 0 15px 15px 0;
-    border: #0065fc;
+    border: none;
     background-color: #0065fc;
     color: white;
 }
@@ -672,14 +672,6 @@ footer
 
 @media screen and (max-width: 1000px)
 {
-
-    /* || Research */
-
-    input
-    {
-        font-size: ;
-    }
-
     
     /* || Filters */
 
@@ -978,7 +970,7 @@ footer
     {
         display: block;
         border-radius: 15px;
-        border: #ff9A00;
+        border: none;
         background-color: #ff9A00;
         filter: invert(100%);
         padding: 16px;

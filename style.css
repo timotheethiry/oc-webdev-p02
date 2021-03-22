@@ -11,6 +11,11 @@ body, input, button
     font-family: 'Raleway', sans-serif;
 }
 
+body
+{
+    margin: 0;
+}
+
 main
 {
     max-width: 1400px;
@@ -920,25 +925,35 @@ footer
     {
         order: 3;
         width: 100%;
-        margin-top: 1rem;
+    }
+
+    nav ul
+    {
+        margin-bottom: 0;
     }
 
     nav ul li
     {
-        width: 49%;
+        width: 50%;
+        text-align: center;
+        border-bottom: solid #f2f2f2;
+        padding-bottom: 1rem;
+    }
+
+    nav ul li:hover
+    {
+        border-color: #0065fc;
     }
 
     nav ul li a
     {
-        padding: 0 50% 1rem 35%;
-        border-bottom: solid #f2f2f2;
+        padding: 0;
     }
 
-    nav ul li a:hover
-    
+    nav ul li:hover a
     {
+        color: #0065fc;
         border-top: none;
-        border-color: #0065fc;
     }
 
     header a

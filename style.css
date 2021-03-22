@@ -185,7 +185,6 @@ input
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    width: 100%;
     padding-left: 3rem;
 }
 
@@ -650,6 +649,24 @@ footer
 
 @media screen and (max-width: 1100px)
 {
+
+    /* || Filters */
+
+    .filtres
+    {
+        padding-left: 2rem;
+    }
+    
+    .filtres h2
+    {
+        width: 100%;
+    }
+
+    button
+    {
+        margin: 1rem 30px 0 0;
+        font-size: 16px;
+    }
     
     .card-preview 
     {
@@ -672,24 +689,6 @@ footer
 
 @media screen and (max-width: 1000px)
 {
-    
-    /* || Filters */
-
-    .filtres
-    {
-        padding-left: 2rem;
-    }
-    
-    .filtres h2
-    {
-        width: 100%;
-    }
-
-    button
-    {
-        margin: 1rem 30px 0 0;
-        font-size: 16px;
-    }
 
     .filtres__result
     {
